@@ -1,0 +1,129 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-contact
+
+
+		.wrapper
+
+			h1.main-title-h1 Контакты
+
+			.page-contact__inner.mb-100
+
+				.page-contact__block
+					.bl
+						.block__title Адрес склада:
+						.block__item
+							img(src="img/contact/ico1.svg" alt="Ico")
+							.item__text
+								p г. Долгопрудный, <br />Лихачевский проспект, д.18
+					.block__item.block__item_metro
+						img(src="img/contact/ico2.svg" alt="Ico")
+						.item__text
+							p Новодачная
+					.bl
+						.block__title Телефон склада:
+						.block__item
+							img(src="img/contact/ico3.svg" alt="Ico")
+							.item__text
+								p 8 (800) 343-34-34
+					.bl
+						.block__title Время работы:
+						.block__item.block__item_time
+							img(src="img/contact/ico4.svg" alt="Ico")
+							.item__text
+								p
+									span Пн - Пт - с 
+									| 09:00 
+									span до 
+									| 22:00
+								p
+									span Сб - с 
+									| 10:00 
+									span до 
+									| 20:00
+								p
+									span Вс - 
+									| выходной
+					.bl.bl_email
+						.block__title E-mail:
+						.block__item
+							img(src="img/contact/ico5.svg" alt="Ico")
+							.item__text
+								p info@svetdecor.ru
+					.block__bottom
+						a(href="#").bottom__item
+							img(src="img/contact/icoB1.svg" alt="Ico")
+							span Звоните
+						a(href="#").bottom__item
+							img(src="img/contact/icoB2.svg" alt="Ico")
+							span Пишите
+						a(href="#").bottom__item
+							img(src="img/contact/icoB3.svg" alt="Ico")
+							span Приезжайте
+
+				.page-contact__map
+					.map
+						img(src="img/basket/Map.jpg" alt="Map").map-img
+						.map__point
+							img(src="img/basket/Gps.svg" alt="Map")
+						.map__popup
+							.map__item
+								img(src="img/basket/IcoGps.svg" alt="Ico")
+								span г. Долгопрудный,<br />Лихачевский проспект, д.18
+							.map__item.map__item_bold
+								img(src="img/basket/IcoMetro.svg" alt="Ico")
+								span Новодачная
+							.map__item.map__item_bold
+								img(src="img/basket/IcoPhone.svg" alt="Ico")
+								span 8 (800) 343-34-34
+							.map__item
+								img(src="img/basket/IcoClock.svg" alt="Ico")
+								span ежедневно с 10:00 до 22:00
+							button.map__direction
+								img(src="img/basket/IcoLocation.svg" alt="Ico")
+								span Проложить маршрут
+							a(href="#").map__more
+								span Подробнее
+								img(src="img/basket/Arrow.svg" alt="Ico")
+							.popup__close
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0001 18.5714C5.27366 18.5714 1.42871 14.7265 1.42871 10C1.42871 5.27352 5.27366 1.42857 10.0001 1.42857C14.7266 1.42857 18.5716 5.27352 18.5716 10C18.5716 14.7265 14.7266 18.5714 10.0001 18.5714ZM10.0001 2.5C5.86444 2.5 2.50014 5.8643 2.50014 10C2.50014 14.1357 5.86444 17.5 10.0001 17.5C14.1358 17.5 17.5001 14.1357 17.5001 10C17.5001 5.8643 14.1358 2.5 10.0001 2.5Z" fill="#909090"/><path d="M7.02877 13.5714C6.87506 13.5714 6.72134 13.5131 6.60455 13.3954C6.3701 13.161 6.3701 12.7809 6.60455 12.5464L12.5466 6.60441C12.7812 6.36996 13.1613 6.36996 13.3957 6.60441C13.6302 6.83886 13.6302 7.21897 13.3957 7.45356L7.45358 13.3954C7.33518 13.5131 7.18161 13.5714 7.02877 13.5714Z" fill="#909090"/><path d="M12.9707 13.5714C12.8171 13.5714 12.6634 13.5131 12.5466 13.3954L6.60466 7.45364C6.37006 7.21916 6.37006 6.83902 6.60466 6.60454C6.83912 6.36992 7.21922 6.36992 7.45368 6.60454L13.3956 12.5471C13.6302 12.7815 13.6302 13.1617 13.3956 13.3962C13.2781 13.5131 13.1244 13.5714 12.9707 13.5714Z" fill="#909090"/></svg>
+
+			+email
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

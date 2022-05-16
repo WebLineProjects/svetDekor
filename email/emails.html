@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>СветДекор</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Description of website">
+  <meta name="keywords" content="Website">
+  <!-- Montserrat FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    *{
+      font-family: Montserrat;
+      box-sizing: border-box;
+    }
+    table{
+      margin: 0px;
+      padding: 0;
+      max-width: 600px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .go-to-site{
+      background: #951BC4;
+      border-radius: 4px;
+      padding: 16px 24px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #FFFFFF;
+      margin-left: auto;
+      display: block;
+      max-width: 174px;
+      width: 100%;
+    }
+    thead td{
+      padding: 12px 20px;
+      border-bottom: 1px solid #F4F2EE;
+    }
+    .text-hello td{
+      border-left: 4px solid #951BC4;
+    }
+    .text-hello{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #262028;
+    }
+    .pb-12 td{
+      padding-bottom: 12px;
+    }
+    .pl-12 td{
+      padding-left: 12px;
+    }
+    .text-hello span{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration-line: underline;
+      color: #00A887;
+    }
+    .pt-28 td{
+      padding-top: 28px;
+    }
+    .text-p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #262028;
+    }
+    .table-products .art span{
+      color: #3E3E3E;
+    }
+    .table-products .art{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #909090;
+      padding-bottom: 8px;
+      display: block;
+    }
+    .table-products b{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #262028;
+    }
+    .table-products .prod-text{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #909090;
+    }
+    .table-products .prod-text{
+      padding-bottom: 8px;
+      display: block;
+    }
+    .table-products .title{
+      padding-bottom: 8px;
+      padding-top: 4px;
+      display: block;
+    }
+    .table-products .summary span b{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+      color: #951BC4;
+      padding-left: 16px;
+    }
+    .table-products .summary td{
+      text-align: right;
+      padding: 20px;
+      border: 1px solid #F4F2EE;
+      border-radius: 0 0 10px 10px;
+      border-top: none;
+    }
+    .table-products .info b{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #262028;
+    }
+    .table-products .info table{
+      border: 1px solid #F4F2EE;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-top: none;
+    }
+    .table-products .info span{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #909090;
+    }
+    .table-products .summary span{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #909090;
+    }
+    .table-products tr{
+      background: #FFFFFF;
+      border: 1px solid #F4F2EE;
+    }
+    .tr-prod{
+      padding: 16px;
+      display: block;
+    }
+    .text-bottom .title{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #919191;
+      padding-bottom: 8px;
+    }
+    .text-bottom p{
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #262028;
+    }
+    .pb-8{
+      padding-bottom: 8px;
+    }
+    .text-bottom__rht img{
+      margin-right: 8px;
+      width: 24px;
+    }
+    .text-bottom__rht b{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #262028;
+    }
+    .text-bottom__rht .phone-img{
+      padding-bottom: 8px;
+    }
+    .text-bottom__rht .phone{
+      opacity: 0;
+    }
+    .phone-del{
+      padding-left: 34px;
+      padding-bottom: 8px;
+    }
+    span.phone-del{
+      padding-bottom: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #A4A4A4;
+    }
+    .text-bottom__rht{
+      background: #FFFFFF;
+      border: 1px solid #F4F2EE;
+      border-radius: 4px;
+      padding: 16px;
+      vertical-align: top;
+    }
+    .text-bottom{
+      padding-top: 30px;
+    }
+    .footer td{
+      background: #F7F7F7;
+      padding: 20px;
+      border-bottom: 1px solid #E4E4E4;
+    }
+    .footer .cards img{
+      padding-right: 30px;
+    }
+    .footer{
+      padding-top: 60px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .socials{
+      text-align: right;
+    }
+    .copyright p{
+      margin: 0;
+    }
+    .copyright{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3E3E3E;
+    }
+    .delete-emails a{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      display: block;
+      text-decoration-line: underline;
+      color: #909090;
+    }
+  </style>
+  
+  <table border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <table border="0" cellpadding="0" cellspacing="0" style="border-bottom: 1px solid #F4F2EE; padding-bottom: 20px;">
+        <tr>
+          <td style="max-width: 300px;">
+            <img src="logo.svg" alt="Logo" />
+          </td>
+          <td style="text-align: center;">
+            <a class="go-to-site" href="#">Перейти на сайт</a>
+          </td>
+        </tr>
+      </table>
+    </thead>
+    <tbody>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr class="pt-28">
+          <td></td>
+        </tr>
+        <tr class="text-hello pb-12 pl-12">
+          <td>
+            Здравствуйте, <b>Владимир Владимирович</b>
+          </td>
+        </tr>
+        <tr class="text-hello pl-12">
+          <td>
+            Вы оформили заказ <span>№ 356 986 701</span> от <b>10.01.20</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="text-p">В ближайшее время с Вами свяжется наш менеджер для подтверждения заказа!</p>
+          </td>
+        </tr>
+      </table>
+      <table class="table-products" border="0" cellpadding="0" cellspacing="0">
+        <tr class="tr-prod" style="border-radius: 10px 10px 0 0;">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+        <tr class="tr-prod">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+        <tr class="info">
+          <td>
+            <table>
+              <tr>
+                <td style="text-align: left;">
+                  <span>Оплата:</span>
+                  <b>Картой на сайте</b>
+                </td>
+                <td style="text-align: center;">
+                  <span>Доставка:</span>
+                  <b>Бесплатно</b>
+                </td>
+                <td style="text-align: right;">
+                  <span>Скидка:</span>
+                  <b>1200 ₽</b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="summary">
+          <td>
+            <span>Итого:</span>
+            <span>
+              <b>40 000 ₽</b>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <table class="text-bottom">
+        <tr>
+          <td>
+            <span class="title">Информация о заказе</span>
+            <p>Курьерская доставка</p>
+            <p>Москва, ул. Сумская 134</p>
+            <p>Путин Владимир Владимирович</p>
+            <p>+7(495) 343-34-43</p>
+            <p>putin@yandex.ru</p>
+          </td>
+          <td class="text-bottom__rht">
+            <p>Если у вас возникли вопросы</p>
+            <p class="pb-8">обратитесь по телефону:</p>
+            <p class="phone-img">
+              <img src="icowhatsapp.svg" alt="ico">
+              <b>+7(495) 343-34-43</b>
+            </p>
+            <p class="phone-del">
+              <del></del>
+              <b>8 (800) 343-34-34</b>
+            </p>
+            <span class="phone-del">
+              <del></del>
+              Бесплатно по России
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+          <td>
+            <img src="logo.svg" alt="logo">
+          </td>
+          <td class="socials">
+            <a href="#">
+              <img src="social1.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social2.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social3.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social4.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social5.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social6.svg" alt="social">
+            </a>
+          </td>
+        </tr>
+        <tr class="cards">
+          <td colspan="2" style="text-align: center;">
+            <img src="cardbank1.svg" alt="img">
+            <img src="cardbank2.svg" alt="img">
+            <img src="cardbank3.svg" alt="img">
+            <img src="cardbank4.svg" alt="img">
+            <img src="cardbank5.svg" alt="img">
+            <img src="cardbank6.svg" alt="img">
+            <img style="padding-right: 0;" src="cardbank7.svg" alt="img">
+          </td>
+        </tr>
+        <tr class="copyright">
+          <td colspan="2" style="text-align: center;">
+            <p>© 2021 CветДекор. Все права защищены!</p>
+          </td>
+        </tr>
+        <tr class="delete-emails">
+          <td colspan="2">
+            <a href="#">
+              Отписаться от рассылки
+            </a>
+          </td>
+        </tr>
+      </table>
+    </tbody>
+  </table>
+
+
+
+
+
+  <hr>
+  <hr>
+  <hr>
+
+
+
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <table border="0" cellpadding="0" cellspacing="0" style="border-bottom: 1px solid #F4F2EE; padding-bottom: 20px;">
+        <tr>
+          <td style="max-width: 300px;">
+            <img src="logo.svg" alt="Logo" />
+          </td>
+          <td style="text-align: center;">
+            <a class="go-to-site" href="#">Перейти на сайт</a>
+          </td>
+        </tr>
+      </table>
+    </thead>
+    <tbody>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr class="pt-28">
+          <td></td>
+        </tr>
+        <tr class="text-hello pb-12 pl-12">
+          <td>
+            Здравствуйте, <b>Владимир Владимирович</b>
+          </td>
+        </tr>
+        <tr class="text-hello pl-12">
+          <td>
+            Вы оформили заказ <span>№ 356 986 701</span> от <b>10.01.20</b> принят!
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="text-p">Вы получите смс уведомление о точной дате и времени доставки Вашего заказа курьерской службой. Спасибо за покупку!</p>
+          </td>
+        </tr>
+      </table>
+      <table class="table-products" border="0" cellpadding="0" cellspacing="0">
+        <tr class="tr-prod" style="border-radius: 10px 10px 0 0;">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+        <tr class="tr-prod">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+        <tr class="info">
+          <td>
+            <table>
+              <tr>
+                <td style="text-align: left;">
+                  <span>Оплата:</span>
+                  <b>Картой на сайте</b>
+                </td>
+                <td style="text-align: center;">
+                  <span>Доставка:</span>
+                  <b>Бесплатно</b>
+                </td>
+                <td style="text-align: right;">
+                  <span>Скидка:</span>
+                  <b>1200 ₽</b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="summary">
+          <td>
+            <span>Итого:</span>
+            <span>
+              <b>40 000 ₽</b>
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <table class="text-bottom">
+        <tr>
+          <td>
+            <span class="title">Информация о заказе</span>
+            <p>Курьерская доставка</p>
+            <p>Москва, ул. Сумская 134</p>
+            <p>Путин Владимир Владимирович</p>
+            <p>+7(495) 343-34-43</p>
+            <p>putin@yandex.ru</p>
+          </td>
+          <td class="text-bottom__rht">
+            <p>Если у вас возникли вопросы</p>
+            <p class="pb-8">обратитесь по телефону:</p>
+            <p class="phone-img">
+              <img src="icowhatsapp.svg" alt="ico">
+              <b>+7(495) 343-34-43</b>
+            </p>
+            <p class="phone-del">
+              <del></del>
+              <b>8 (800) 343-34-34</b>
+            </p>
+            <span class="phone-del">
+              <del></del>
+              Бесплатно по России
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+          <td>
+            <img src="logo.svg" alt="logo">
+          </td>
+          <td class="socials">
+            <a href="#">
+              <img src="social1.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social2.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social3.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social4.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social5.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social6.svg" alt="social">
+            </a>
+          </td>
+        </tr>
+        <tr class="cards">
+          <td colspan="2" style="text-align: center;">
+            <img src="cardbank1.svg" alt="img">
+            <img src="cardbank2.svg" alt="img">
+            <img src="cardbank3.svg" alt="img">
+            <img src="cardbank4.svg" alt="img">
+            <img src="cardbank5.svg" alt="img">
+            <img src="cardbank6.svg" alt="img">
+            <img style="padding-right: 0;" src="cardbank7.svg" alt="img">
+          </td>
+        </tr>
+        <tr class="copyright">
+          <td colspan="2" style="text-align: center;">
+            <p>© 2021 CветДекор. Все права защищены!</p>
+          </td>
+        </tr>
+        <tr class="delete-emails">
+          <td colspan="2">
+            <a href="#">
+              Отписаться от рассылки
+            </a>
+          </td>
+        </tr>
+      </table>
+    </tbody>
+  </table>
+
+
+
+
+
+  <hr>
+  <hr>
+  <hr>
+
+
+
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+    <thead>
+      <table border="0" cellpadding="0" cellspacing="0" style="border-bottom: 1px solid #F4F2EE; padding-bottom: 20px;">
+        <tr>
+          <td style="max-width: 300px;">
+            <img src="logo.svg" alt="Logo" />
+          </td>
+          <td style="text-align: center;">
+            <a class="go-to-site" href="#">Перейти на сайт</a>
+          </td>
+        </tr>
+      </table>
+    </thead>
+    <tbody>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr class="pt-28">
+          <td></td>
+        </tr>
+        <tr class="text-hello pb-12 pl-12">
+          <td>
+            Здравствуйте, <b>Владимир Владимирович</b>
+          </td>
+        </tr>
+        <tr class="text-hello pl-12">
+          <td>
+            Вы оформили заказ <span>№ 356 986 701</span> от <b>10.01.20</b> принят!
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="text-p">Вы получите смс уведомление о точной дате и времени доставки Вашего заказа курьерской службой. Спасибо за покупку!</p>
+          </td>
+        </tr>
+      </table>
+      <table class="table-products" border="0" cellpadding="0" cellspacing="0">
+        <tr class="tr-prod" style="border-radius: 10px 10px 0 0;">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+        <tr class="tr-prod">
+          <td style="padding-right: 20px;">
+            <img src="photo.png" alt="photo">
+          </td>
+          <td>
+            <span class="stars">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starFull.svg" alt="star">
+              <img src="starEmpty.svg" alt="star">
+            </span>
+            <b class="title">Потолочная люстра Vele Luce Intenso VL1413L06</b>
+            <span class="art">Артикул: <span>SD-345TM43</span></span>
+            <span class="prod-text">Кол-во товаров: <b>2</b></span>
+            <span class="prod-text">Цена: <b>11 200 ₽</b></span>
+          </td>
+        </tr>
+      </table>
+
+      <table class="text-bottom">
+        <tr>
+          <td style="border: 1px solid #F4F2EE;">
+           <p>Если у вас возникли вопросы</p>
+           <p>обратитесь по телефону:</p>
+          </td>
+          <td class="text-bottom__rht" style="border: none;" style="border: 1px solid #F4F2EE;">
+            <p class="phone-img">
+              <img src="icowhatsapp.svg" alt="ico">
+              <b>+7(495) 343-34-43</b>
+            </p>
+            <p class="phone-del">
+              <del></del>
+              <b>8 (800) 343-34-34</b>
+            </p>
+            <span class="phone-del">
+              <del></del>
+              Бесплатно по России
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" class="footer">
+        <tr>
+          <td>
+            <img src="logo.svg" alt="logo">
+          </td>
+          <td class="socials">
+            <a href="#">
+              <img src="social1.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social2.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social3.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social4.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social5.svg" alt="social">
+            </a>
+            <a href="#">
+              <img src="social6.svg" alt="social">
+            </a>
+          </td>
+        </tr>
+        <tr class="cards">
+          <td colspan="2" style="text-align: center;">
+            <img src="cardbank1.svg" alt="img">
+            <img src="cardbank2.svg" alt="img">
+            <img src="cardbank3.svg" alt="img">
+            <img src="cardbank4.svg" alt="img">
+            <img src="cardbank5.svg" alt="img">
+            <img src="cardbank6.svg" alt="img">
+            <img style="padding-right: 0;" src="cardbank7.svg" alt="img">
+          </td>
+        </tr>
+        <tr class="copyright">
+          <td colspan="2" style="text-align: center;">
+            <p>© 2021 CветДекор. Все права защищены!</p>
+          </td>
+        </tr>
+        <tr class="delete-emails">
+          <td colspan="2">
+            <a href="#">
+              Отписаться от рассылки
+            </a>
+          </td>
+        </tr>
+      </table>
+    </tbody>
+  </table>
+
+</body>
+</html>

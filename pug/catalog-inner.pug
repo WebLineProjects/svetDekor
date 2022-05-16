@@ -1,0 +1,1379 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-catalog-inner
+
+
+		.filter-fixed
+			.filter-fixed__button
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.4818 1.71436H2.51842C2.07457 1.71436 1.71484 2.07408 1.71484 2.51793C1.71484 4.75569 2.67411 6.89207 4.3467 8.37883L7.86594 11.5068C8.47616 12.0492 8.82615 12.8286 8.82615 13.6452V21.4813C8.82615 22.1217 9.54183 22.5056 10.0753 22.1498L14.8162 18.9893C15.0397 18.8402 15.1741 18.5894 15.1741 18.3207V13.6452C15.1741 12.8286 15.5241 12.0492 16.1343 11.5068L19.6534 8.37883C21.326 6.89207 22.2852 4.75569 22.2852 2.51793C22.2852 2.07408 21.9255 1.71436 21.4818 1.71436ZM18.5856 7.17755L15.0666 10.3057C14.1136 11.1529 13.5669 12.37 13.5669 13.6451V17.8907L10.4331 19.9798V13.6452C10.4331 12.37 9.88649 11.1529 8.9335 10.3057L5.41442 7.17771C4.28659 6.17497 3.56667 4.80105 3.37394 3.32134H20.6261C20.4334 4.80105 19.7136 6.17497 18.5856 7.17755Z" fill="white"/></svg>
+				span Фильтры
+			.filter-fixed__tags
+				.tag
+					span Цена:
+					p Выбрать...
+				.tag
+					span Порядок:
+					p Популярные
+				.tag
+					span Размеры:
+					p Выбрать...
+				.tag
+					span Стиль:
+					p Выбрать...
+				.tag
+					span Место применения:
+					p Выбрать...
+
+
+
+		.wrapper
+
+			h2
+				| Люстры
+				span
+					span 12 343
+					span товаров
+
+			.page-catalog-inner__sides
+				.page-catalog-inner__filter
+
+					.filter-fixed__bgd
+
+					.filter__found
+						p Найдено 432 товара
+						a(href="#") Показать
+
+					.filter-fixed__inner
+
+						.filter-fixed__top
+							h2 Параметры
+							.filter-fixed__close
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#909090"/><path d="M8.43492 16.2858C8.25046 16.2858 8.066 16.2158 7.92585 16.0746C7.64451 15.7933 7.64451 15.3371 7.92585 15.0558L15.0563 7.92536C15.3378 7.64402 15.7939 7.64402 16.0753 7.92536C16.3566 8.2067 16.3566 8.66283 16.0753 8.94435L8.94468 16.0746C8.8026 16.2158 8.61832 16.2858 8.43492 16.2858V16.2858Z" fill="#909090"/><path d="M15.5652 16.2858C15.3809 16.2858 15.1965 16.2158 15.0563 16.0746L7.92598 8.94443C7.64446 8.66306 7.64446 8.20689 7.92598 7.92552C8.20733 7.64397 8.66346 7.64397 8.9448 7.92552L16.0751 15.0565C16.3567 15.3379 16.3567 15.7941 16.0751 16.0755C15.9341 16.2158 15.7497 16.2858 15.5652 16.2858V16.2858Z" fill="#909090"/></svg>
+
+						.filter-fixed__content
+
+							.filter__block.filter__block_active.filter__block-catalog
+								.filter__top
+									a(href="#").catalog__back
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.89809 6.3293L8.44844 11.8643C8.63029 12.0455 8.92471 12.0452 9.10626 11.8634C9.28766 11.6815 9.28719 11.3869 9.10532 11.2055L3.88534 5.99998L9.1055 0.794437C9.28736 0.613032 9.28782 0.318634 9.10644 0.13676C9.01543 0.0455885 8.89621 2.89127e-06 8.77698 2.90169e-06C8.65806 2.91209e-06 8.5393 0.0452834 8.44846 0.135822L2.89809 5.67068C2.8105 5.75782 2.76135 5.87642 2.76135 5.99998C2.76135 6.12354 2.81064 6.24199 2.89809 6.3293Z" fill="#262028"/></svg>
+										span Каталог товаров
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter__inner-block.filter__inner-block_active
+										.filter__inner-block__top
+											span Люстры
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											ul
+												li
+													a(href="#")
+														.title Потолочные
+														.count 3 234
+												li
+													a(href="#")
+														.title Подвесные
+														.count 8 437
+												li
+													a(href="#")
+														.title Каскадные
+														.count 125
+												li
+													a(href="#")
+														.title Люстры на штанге
+														.count 1 123
+												li
+													a(href="#")
+														span.title Большие люстры
+														span.count 1 531
+
+							.filter__block.filter__block_active.filter__block-price
+								.filter__top
+									h3.filter__title
+										span Цена
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-price__inputs
+										.inputs
+											label
+												span от
+												input(type="text").range-ot
+											label
+												span до
+												input(type="text").range-do
+										#slider-range
+									.filter-price__checkboxes
+										input(type="checkbox")#ch1
+										label(for="ch1").label-ch
+											.label-switcher
+											span Распродажа
+										input(type="checkbox")#ch2
+										label(for="ch2").label-ch
+											.label-switcher
+											span Новинка
+										input(type="checkbox")#ch3
+										label(for="ch3").label-ch
+											.label-switcher
+											span Эксклюзив
+
+							.filter__block.filter__block_active.filter__block-size
+								.filter__top
+									h3.filter__title
+										span Размеры
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-size__item
+										.item__title Высота, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+									.filter-size__item
+										.item__title Длина, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+									.filter-size__item
+										.item__title Глубина, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+									.filter-size__item
+										.item__title Ширина, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+									.filter-size__item
+										.item__title Диаметр, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+									.filter-size__item
+										.item__title Длина цепи, мм
+										.item__input
+											label(for="id-ot1") от 
+											input(type="text" placeholder="0")#id-ot1
+										.item__input
+											label(for="id-do1") до 
+											input(type="text" placeholder="4 820")#id-do1
+
+							.filter__block.filter__block_active.filter__block-style
+								.filter__top
+									h3.filter__title
+										span Стиль
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item1
+											label(for="ch-item1")
+												.item__title Американский
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item2
+											label(for="ch-item2")
+												.item__title Арт-деко
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item3
+											label(for="ch-item3")
+												.item__title Восточный
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item4
+											label(for="ch-item4")
+												.item__title Дизайнерский
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item5
+											label(for="ch-item5")
+												.item__title Замковый
+												.item__count 432
+									.filter__more
+										span Показать еще
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-location
+								.filter__top
+									h3.filter__title
+										span Место применения
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter__inner-block.filter__inner-block_active
+										.filter__inner-block__top
+											span Место применения
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item11
+													label(for="ch-item11")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item21
+													label(for="ch-item21")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item31
+													label(for="ch-item31")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item41
+													label(for="ch-item41")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item51
+													label(for="ch-item51")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+									.filter__inner-block
+										.filter__inner-block__top
+											span Место установки
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+									.filter__switcher
+										input(type="checkbox")#ch1-1
+										label(for="ch1-1").label-ch
+											span Для натяжных потолоков
+											.label-switcher
+										input(type="checkbox")#ch1-2
+										label(for="ch1-2").label-ch
+											span Для низких потолоков
+											.label-switcher
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Тип лампочки
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter__inner-block.filter__inner-block_active
+										.filter__inner-block__top
+											span Тип лампочки
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item111
+													label(for="ch-item111")
+														.item__title Галогеновая
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item211
+													label(for="ch-item211")
+														.item__title Накаливания
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item311
+													label(for="ch-item311")
+														.item__title Светодиодная
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item411
+													label(for="ch-item411")
+														.item__title Энергосберегающая
+														.item__count 432
+
+									.filter__inner-block
+										.filter__inner-block__top
+											span Место установки
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Форма светильника
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111
+											label(for="ch-item111")
+												.item__title Галогеновая
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item211
+											label(for="ch-item211")
+												.item__title Накаливания
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item311
+											label(for="ch-item311")
+												.item__title Светодиодная
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item411
+											label(for="ch-item411")
+												.item__title Энергосберегающая
+												.item__count 432
+									.filter__more
+										span Показать еще
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Параметры плафонов
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter__inner-block.filter__inner-block_active
+										.filter__inner-block__top
+											span Форма плафонов
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item111
+													label(for="ch-item111")
+														.item__title Галогеновая
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item211
+													label(for="ch-item211")
+														.item__title Накаливания
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item311
+													label(for="ch-item311")
+														.item__title Светодиодная
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item411
+													label(for="ch-item411")
+														.item__title Энергосберегающая
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+									.filter__inner-block
+										.filter__inner-block__top
+											span Цвет плафонов
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+									.filter__inner-block
+										.filter__inner-block__top
+											span Материал плафонов
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+									.filter__inner-block
+										.filter__inner-block__top
+											span Направление плафонов
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-colors
+								.filter__top
+									h3.filter__title
+										span Параметры арматуры
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter__inner-block.filter__inner-block_active
+										.filter__inner-block__top
+											span Цвет арматуры
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item1112
+													label(for="ch-item1112")
+														.item__color(style="background: #fff;border: 1px solid #3E3E3E;")
+														.item__title Белый
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item2112
+													label(for="ch-item2112")
+														.item__color(style="background: #9A7340")
+														.item__title Бронза
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item3112
+													label(for="ch-item3112")
+														.item__color(style="background: #6B5C39")
+														.item__title Античная латунь
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item4112
+													label(for="ch-item4112")
+														.item__color(style="background: #22232C")
+														.item__title Графит
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item5112
+													label(for="ch-item5112")
+														.item__color(style="background: #866A61")
+														.item__title Венге
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+									.filter__inner-block
+										.filter__inner-block__top
+											span Материал арматуры
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item129
+													label(for="ch-item129")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item229
+													label(for="ch-item229")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item329
+													label(for="ch-item329")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item429
+													label(for="ch-item429")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item529
+													label(for="ch-item529")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+									.filter__inner-block
+										.filter__inner-block__top
+											span Кол-во рожков
+											<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#262028"/></svg>
+										.filter__inner-block__content
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item12
+													label(for="ch-item12")
+														.item__title Американский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item22
+													label(for="ch-item22")
+														.item__title Арт-деко
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item32
+													label(for="ch-item32")
+														.item__title Восточный
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item42
+													label(for="ch-item42")
+														.item__title Дизайнерский
+														.item__count 432
+											.filter-style__item
+												.item__label
+													input(type="checkbox")#ch-item52
+													label(for="ch-item52")
+														.item__title Замковый
+														.item__count 432
+											.filter__more
+												span Показать еще
+												<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Особенности
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Умный дом
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-du
+								.filter__top
+									h3.filter__title
+										span Пульт ДУ
+										p Выбрать...
+									.filter__switcher
+										input(type="checkbox")#ch1-du
+										label(for="ch1-du").label-ch
+											.label-switcher
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Выключатель
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Нет
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Тип подвеса
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Провод
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Трос
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Цепь
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Штанга
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Страна
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Австрия
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Бельгия
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Германия
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Дания
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Испания
+												.item__count 432
+									.filter__more
+										span Показать еще
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Бренд
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Abrasax
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Adilux
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Alfa
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Ambiente
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Ambrella light
+												.item__count 432
+									.filter__more
+										span Показать еще
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Диммер
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Да
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Нет
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Теги
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Автомобильный
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Ангелочки
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Ассиметрия
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Барабан
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Бокалы
+												.item__count 432
+									.filter__more
+										span Показать еще
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3293 9.10387L11.8643 3.55351C12.0455 3.37166 12.0452 3.07724 11.8634 2.8957C11.6815 2.71429 11.3869 2.71476 11.2055 2.89663L5.99998 8.11661L0.794437 2.89645C0.613032 2.7146 0.318634 2.71413 0.13676 2.89551C0.0455885 2.98652 2.8459e-06 3.10574 2.84069e-06 3.22497C2.83549e-06 3.34389 0.0452833 3.46265 0.135822 3.55349L5.67068 9.10387C5.75782 9.19145 5.87642 9.2406 5.99998 9.2406C6.12354 9.2406 6.24199 9.19131 6.3293 9.10387Z" fill="#00A887"/></svg>
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Степень защиты
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title IP20
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title IP21
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title IP23
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title IP40
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Напряжение, V
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title 12
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title 220
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title 220-240
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title 230
+												.item__count 432
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title 240
+												.item__count 432
+
+							.filter__block.filter__block_active.filter__block-type
+								.filter__top
+									h3.filter__title
+										span Количество фаз
+										p Выбрать...
+									.filter__button
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="path-circle" d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#262028"/><path class="path-horizontal" d="M16.5022 12.8574H7.50223C7.14737 12.8574 6.85938 12.4734 6.85938 12.0002C6.85938 11.5271 7.14737 11.1431 7.50223 11.1431H16.5022C16.8571 11.1431 17.1451 11.5271 17.1451 12.0002C17.1451 12.4734 16.8571 12.8574 16.5022 12.8574Z" fill="#262028"/><path class="path-vertical" d="M12.0017 17.1431C11.5285 17.1431 11.1445 16.8551 11.1445 16.5003V7.50028C11.1445 7.14542 11.5285 6.85742 12.0017 6.85742C12.4748 6.85742 12.8588 7.14542 12.8588 7.50028V16.5003C12.8588 16.8551 12.4748 17.1431 12.0017 17.1431Z" fill="#262028"/></svg>
+								.filter__content
+									.filter-style__item
+										.item__label
+											input(type="checkbox")#ch-item111321
+											label(for="ch-item111321")
+												.item__title Однофазный
+												.item__count 432
+
+						.filter-fixed__submit
+							button
+								span.submit Применить
+								span.count 3
+
+
+
+
+
+
+
+
+
+
+
+
+				.page-catalog-inner__right
+					.page-catalog-inner__slider.mb-28
+						.slider__arrows
+							.arr__lft
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11.2752L8.35321 12L3 6L8.35321 -2.82721e-08L9 0.724754L4.29382 5.99949L9 11.2752Z" fill="#3E3E3E"/></svg>
+							.arr__rht
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 0.724753L3.64679 2.82721e-08L9 6L3.64679 12L3 11.2752L7.70618 6.00051L3 0.724753Z" fill="#3E3E3E"/></svg>
+						.page-catalog-inner__slider-top
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+							a(href="#").slider__item.categories__item
+								.item__photo
+									img(src="img/index/cat-photo1.jpg" alt="Photo")
+								h3.item__title Диваны
+								p.item__count 12 343 товаров
+
+					.page-catalog-inner__tags.mb-28
+						.tags__close
+						.tags__block
+							a(href="#").tags__item Подвесные светильники для кухни
+							a(href="#").tags__item Подвесные светильники в спальню
+							a(href="#").tags__item Подвесные светильники лофт
+							a(href="#").tags__item Подвесы на кухню над обеденным столом
+							a(href="#").tags__item Подвесные светильники черные
+							a(href="#").tags__item Белые подвесные светильники
+							a(href="#").tags__item Светильники шары подвесные
+							a(href="#").tags__item Подвесные светильники Odeon Light
+							a(href="#").tags__item Подвесные светильники Maytoni
+							a(href="#").tags__item Подвесные светильники Eglo
+							a(href="#").tags__item.tags__item_more
+								span Показать еще
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#262028"/><path d="M4 14C5.10457 14 6 13.1046 6 12C6 10.8954 5.10457 10 4 10C2.89543 10 2 10.8954 2 12C2 13.1046 2.89543 14 4 14Z" fill="#262028"/><path d="M20 14C21.1046 14 22 13.1046 22 12C22 10.8954 21.1046 10 20 10C18.8954 10 18 10.8954 18 12C18 13.1046 18.8954 14 20 14Z" fill="#262028"/></svg>
+
+					.page-catalog-inner__fast.mb-28
+						.fast__top
+							h3 Быстрые переходы
+						.fast__content
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Тип
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Стиль
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Материал
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Назначение
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Цвет
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Страна
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Особенности
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Форма
+							a(href="#").fast__item
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.3954 9.84959C21.3665 9.69853 21.2315 9.58923 21.0804 9.58923H17.8404C17.6861 9.58923 17.5543 9.69849 17.5254 9.84959L16.6383 14.4653C16.5997 14.6646 16.754 14.8478 16.9532 14.8478H19.139V17.0175C19.139 18.8978 17.609 20.4278 15.7286 20.4278C13.8515 20.4278 12.3215 18.8978 12.3215 17.0175V16.5835H13.2536C13.4304 16.5835 13.5751 16.4389 13.5751 16.2621C13.5751 16.0821 13.4304 15.9407 13.2536 15.9407H12.3215V14.8478H14.5072C14.7065 14.8478 14.8608 14.6645 14.8222 14.4652L13.935 9.84955C13.9061 9.69849 13.7743 9.58919 13.62 9.58919H12.3215V3.88388H13.4369C13.8804 3.88388 14.2404 3.52386 14.2404 3.0803V2.35711H15.224C15.4007 2.35711 15.5454 2.21246 15.5454 2.03567C15.5454 1.85889 15.4008 1.71423 15.224 1.71423H8.77939C8.59938 1.71423 8.45795 1.85885 8.45795 2.03567C8.45795 2.21246 8.59938 2.35711 8.77939 2.35711H9.76294V3.08034C9.76294 3.5239 10.1229 3.88392 10.5633 3.88392H11.6787V9.58927H10.3833C10.229 9.58927 10.094 9.69853 10.0651 9.84964L9.18118 14.4653C9.14256 14.6646 9.29362 14.8478 9.49617 14.8478H11.6787V15.9407H10.7497C10.5697 15.9407 10.4283 16.0821 10.4283 16.2621C10.4283 16.4389 10.5697 16.5836 10.7497 16.5836H11.6787V17.0175C11.6787 18.8978 10.1487 20.4278 8.27153 20.4278C7.36192 20.4278 6.5069 20.0742 5.86084 19.4314C5.218 18.7853 4.86443 17.9303 4.86443 17.0175V14.8478H7.04689C7.24944 14.8478 7.40051 14.6645 7.36511 14.4652L6.478 9.84955C6.44909 9.69849 6.31407 9.58919 6.16297 9.58919H2.92301C2.76868 9.58919 2.63689 9.69845 2.60798 9.84955L1.72079 14.4653C1.68221 14.6646 1.8365 14.8478 2.03582 14.8478H4.22151V17.0175C4.22151 18.1007 4.64257 19.1196 5.40761 19.8846C6.17256 20.6496 7.18828 21.0706 8.27149 21.0706C9.70182 21.0706 10.9587 20.3249 11.6786 19.2031V21.9642C11.6786 22.141 11.8232 22.2857 12.0001 22.2857C12.18 22.2857 12.3215 22.141 12.3215 21.9642V19.2031C13.0447 20.3249 14.3015 21.0706 15.7318 21.0706C17.9657 21.0706 19.7818 19.2545 19.7818 17.0174V14.8478H21.9643C22.1668 14.8478 22.3179 14.6645 22.2825 14.4652L21.3954 9.84959ZM9.8851 14.2049L10.6469 10.2321H13.3533L14.1183 14.2049H9.8851Z" fill="#00A887"/></svg>
+								span Бренд
+
+					.page-catalog-inner__buttons
+						.select.select-sort
+							.select__head
+								span Популярные
+							.select__body
+								.select__item
+									span Популярные
+								.select__item
+									span Сначала дорогие
+								.select__item
+									span Сначала дешевые
+								.select__item
+									span Скидки
+								.select__item
+									span Новинки
+
+						.button__switcher.button__switcher-type
+							input(type="checkbox" name="radionName1")#sw-tov1
+							label(for="sw-tov1") Товар
+							label(for="sw-tov1").label-switcher Коллекция
+						.button__count
+							span Показывать по:
+							.select
+								.select__head
+									span 18
+								.select__body
+									.select__item
+										span 18
+									.select__item
+										span 24
+									.select__item
+										span 36
+									.select__item
+										span 48
+									.select__item
+										span 60
+						.button__tabs
+							.tab__item.tab__item_active(data-tab="blocks")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4181 1.71423H2.50607C2.06908 1.71423 1.71484 2.06847 1.71484 2.50546V10.4176C1.71484 10.8545 2.06908 11.2088 2.50607 11.2088H10.4182C10.8552 11.2088 11.2094 10.8545 11.2094 10.4176V2.50546C11.2093 2.06847 10.8551 1.71423 10.4181 1.71423ZM9.62694 9.62633H3.29724V3.29663H9.62689V9.62633H9.62694Z" fill="#A4A4A4"/><path d="M21.4963 1.71423H13.5842C13.1472 1.71423 12.793 2.06847 12.793 2.50546V10.4176C12.793 10.8545 13.1472 11.2088 13.5842 11.2088H21.4963C21.9333 11.2088 22.2875 10.8545 22.2875 10.4176V2.50546C22.2875 2.06847 21.9332 1.71423 21.4963 1.71423ZM20.7051 9.62633H14.3754V3.29663H20.7051V9.62633Z" fill="#A4A4A4"/><path d="M10.4181 12.7911H2.50607C2.06908 12.7911 1.71484 13.1454 1.71484 13.5824V21.4945C1.71484 21.9314 2.06908 22.2857 2.50607 22.2857H10.4182C10.8552 22.2857 11.2094 21.9314 11.2094 21.4945V13.5824C11.2093 13.1454 10.8551 12.7911 10.4181 12.7911ZM9.62694 20.7032H3.29724V14.3736H9.62689V20.7032H9.62694Z" fill="#A4A4A4"/><path d="M21.4963 12.7911H13.5842C13.1472 12.7911 12.793 13.1454 12.793 13.5824V21.4945C12.793 21.9314 13.1472 22.2857 13.5842 22.2857H21.4963C21.9333 22.2857 22.2875 21.9314 22.2875 21.4945V13.5824C22.2875 13.1454 21.9332 12.7911 21.4963 12.7911ZM20.7051 20.7032H14.3754V14.3736H20.7051V20.7032Z" fill="#A4A4A4"/></svg>
+							.tab__item(data-tab="line")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.12301 7.59178H3.18423C2.37386 7.59178 1.71484 6.9324 1.71484 6.1224V3.18362C1.71484 2.37362 2.37386 1.71423 3.18423 1.71423H6.12301C6.93337 1.71423 7.59239 2.37362 7.59239 3.18362V6.1224C7.59239 6.9324 6.93337 7.59178 6.12301 7.59178ZM3.18423 3.18362V6.1224H6.12411L6.12301 3.18362H3.18423ZM22.2863 4.65301C22.2863 4.24691 21.9573 3.91831 21.5516 3.91831H9.79648C9.39074 3.91831 9.06178 4.24691 9.06178 4.65301C9.06178 5.05911 9.39074 5.3877 9.79648 5.3877H21.5516C21.9573 5.3877 22.2863 5.05911 22.2863 4.65301ZM6.12301 14.9387H3.18423C2.37386 14.9387 1.71484 14.2793 1.71484 13.4693V10.5306C1.71484 9.72056 2.37386 9.06117 3.18423 9.06117H6.12301C6.93337 9.06117 7.59239 9.72056 7.59239 10.5306V13.4693C7.59239 14.2793 6.93337 14.9387 6.12301 14.9387ZM3.18423 10.5306V13.4693H6.12411L6.12301 10.5306H3.18423ZM22.2863 11.9999C22.2863 11.5938 21.9573 11.2653 21.5516 11.2653H9.79648C9.39074 11.2653 9.06178 11.5938 9.06178 11.9999C9.06178 12.406 9.39074 12.7346 9.79648 12.7346H21.5516C21.9573 12.7346 22.2863 12.406 22.2863 11.9999ZM6.12301 22.2857H3.18423C2.37386 22.2857 1.71484 21.6263 1.71484 20.8163V17.8775C1.71484 17.0675 2.37386 16.4081 3.18423 16.4081H6.12301C6.93337 16.4081 7.59239 17.0675 7.59239 17.8775V20.8163C7.59239 21.6263 6.93337 22.2857 6.12301 22.2857ZM3.18423 17.8775V20.8163H6.12411L6.12301 17.8775H3.18423ZM22.2863 19.3469C22.2863 18.9408 21.9573 18.6122 21.5516 18.6122H9.79648C9.39074 18.6122 9.06178 18.9408 9.06178 19.3469C9.06178 19.753 9.39074 20.0816 9.79648 20.0816H21.5516C21.9573 20.0816 22.2863 19.753 22.2863 19.3469Z" fill="#A4A4A4"/></svg>
+					.page-catalog-inner__center
+						span.count-products Товары 1-18 из 8673
+						.button__tabs
+							.tab__item.tab__item_active(data-tab="blocks")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4181 1.71423H2.50607C2.06908 1.71423 1.71484 2.06847 1.71484 2.50546V10.4176C1.71484 10.8545 2.06908 11.2088 2.50607 11.2088H10.4182C10.8552 11.2088 11.2094 10.8545 11.2094 10.4176V2.50546C11.2093 2.06847 10.8551 1.71423 10.4181 1.71423ZM9.62694 9.62633H3.29724V3.29663H9.62689V9.62633H9.62694Z" fill="#A4A4A4"/><path d="M21.4963 1.71423H13.5842C13.1472 1.71423 12.793 2.06847 12.793 2.50546V10.4176C12.793 10.8545 13.1472 11.2088 13.5842 11.2088H21.4963C21.9333 11.2088 22.2875 10.8545 22.2875 10.4176V2.50546C22.2875 2.06847 21.9332 1.71423 21.4963 1.71423ZM20.7051 9.62633H14.3754V3.29663H20.7051V9.62633Z" fill="#A4A4A4"/><path d="M10.4181 12.7911H2.50607C2.06908 12.7911 1.71484 13.1454 1.71484 13.5824V21.4945C1.71484 21.9314 2.06908 22.2857 2.50607 22.2857H10.4182C10.8552 22.2857 11.2094 21.9314 11.2094 21.4945V13.5824C11.2093 13.1454 10.8551 12.7911 10.4181 12.7911ZM9.62694 20.7032H3.29724V14.3736H9.62689V20.7032H9.62694Z" fill="#A4A4A4"/><path d="M21.4963 12.7911H13.5842C13.1472 12.7911 12.793 13.1454 12.793 13.5824V21.4945C12.793 21.9314 13.1472 22.2857 13.5842 22.2857H21.4963C21.9333 22.2857 22.2875 21.9314 22.2875 21.4945V13.5824C22.2875 13.1454 21.9332 12.7911 21.4963 12.7911ZM20.7051 20.7032H14.3754V14.3736H20.7051V20.7032Z" fill="#A4A4A4"/></svg>
+							.tab__item(data-tab="line")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.12301 7.59178H3.18423C2.37386 7.59178 1.71484 6.9324 1.71484 6.1224V3.18362C1.71484 2.37362 2.37386 1.71423 3.18423 1.71423H6.12301C6.93337 1.71423 7.59239 2.37362 7.59239 3.18362V6.1224C7.59239 6.9324 6.93337 7.59178 6.12301 7.59178ZM3.18423 3.18362V6.1224H6.12411L6.12301 3.18362H3.18423ZM22.2863 4.65301C22.2863 4.24691 21.9573 3.91831 21.5516 3.91831H9.79648C9.39074 3.91831 9.06178 4.24691 9.06178 4.65301C9.06178 5.05911 9.39074 5.3877 9.79648 5.3877H21.5516C21.9573 5.3877 22.2863 5.05911 22.2863 4.65301ZM6.12301 14.9387H3.18423C2.37386 14.9387 1.71484 14.2793 1.71484 13.4693V10.5306C1.71484 9.72056 2.37386 9.06117 3.18423 9.06117H6.12301C6.93337 9.06117 7.59239 9.72056 7.59239 10.5306V13.4693C7.59239 14.2793 6.93337 14.9387 6.12301 14.9387ZM3.18423 10.5306V13.4693H6.12411L6.12301 10.5306H3.18423ZM22.2863 11.9999C22.2863 11.5938 21.9573 11.2653 21.5516 11.2653H9.79648C9.39074 11.2653 9.06178 11.5938 9.06178 11.9999C9.06178 12.406 9.39074 12.7346 9.79648 12.7346H21.5516C21.9573 12.7346 22.2863 12.406 22.2863 11.9999ZM6.12301 22.2857H3.18423C2.37386 22.2857 1.71484 21.6263 1.71484 20.8163V17.8775C1.71484 17.0675 2.37386 16.4081 3.18423 16.4081H6.12301C6.93337 16.4081 7.59239 17.0675 7.59239 17.8775V20.8163C7.59239 21.6263 6.93337 22.2857 6.12301 22.2857ZM3.18423 17.8775V20.8163H6.12411L6.12301 17.8775H3.18423ZM22.2863 19.3469C22.2863 18.9408 21.9573 18.6122 21.5516 18.6122H9.79648C9.39074 18.6122 9.06178 18.9408 9.06178 19.3469C9.06178 19.753 9.39074 20.0816 9.79648 20.0816H21.5516C21.9573 20.0816 22.2863 19.753 22.2863 19.3469Z" fill="#A4A4A4"/></svg>
+					.page-catalog-inner__pagination.page-catalog-inner__pagination-top
+						span.count-products Товары 1-18 из 8673
+						.pagination
+							span.pagination__item.pagination__item_current 1
+							a(href="#").pagination__item 2
+							a(href="#").pagination__item 3
+							a(href="#").pagination__item 4
+							a(href="#").pagination__item ...
+							a(href="#").pagination__item 45
+							a(href="#").pagination__item
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.87341 5.6707L3.73486 0.1357C3.5665 -0.0455414 3.29392 -0.0452367 3.12585 0.136638C2.9579 0.318488 2.95833 0.613073 3.12671 0.794455L7.9594 6.00002L3.12654 11.2056C2.95818 11.387 2.95775 11.6814 3.12567 11.8632C3.20993 11.9544 3.32031 12 3.43069 12C3.54079 12 3.65073 11.9547 3.73484 11.8642L8.87341 6.32932C8.9545 6.24218 9 6.12358 9 6.00002C9 5.87646 8.95437 5.75801 8.87341 5.6707Z" fill="#262028"/></svg>
+
+					.page-catalog-inner__cards
+						.cards__block
+							+card
+							+card1
+							+card2
+							+card3
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+							+card
+						.cards__more.show-more
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5582 19.2835C8.99476 19.2832 7.47028 18.8113 6.19666 17.9334C4.92303 17.0556 3.96354 15.8154 3.45154 14.3852C2.93955 12.9551 2.90049 11.406 3.33981 9.95339C3.77912 8.50076 4.67498 7.21672 5.90285 6.27977C7.13072 5.34281 8.6296 4.79948 10.1911 4.72531C11.7527 4.65114 13.2993 5.04981 14.616 5.8659C15.9327 6.682 16.9541 7.87497 17.5382 9.27899C18.1222 10.683 18.24 12.2283 17.8751 13.7001L15.4538 11.356L14.5159 12.2641L18.4006 16.0249L22.2852 12.2705L21.3473 11.356L19.3118 13.3395C19.5947 11.6088 19.3228 9.83579 18.533 8.25925C17.7431 6.68271 16.4731 5.37841 14.8942 4.52204C13.3152 3.66567 11.503 3.29838 9.70184 3.46964C7.90064 3.6409 6.19693 4.34248 4.82019 5.47989C3.44346 6.61729 2.45985 8.13587 2.00188 9.83105C1.54389 11.5262 1.63354 13.3166 2.25874 14.9609C2.88394 16.6053 4.01466 18.0246 5.49857 19.0278C6.98249 20.0309 8.74831 20.5697 10.5582 20.5714L10.5582 19.2835Z" fill="#00A887"/></svg>
+							span Показать еще 18 товаров
+
+					.page-catalog-inner__pagination.mb-100
+						span.count-products Товары 1-18 из 8673
+						.pagination
+							span.pagination__item.pagination__item_current 1
+							a(href="#").pagination__item 2
+							a(href="#").pagination__item 3
+							a(href="#").pagination__item 4
+							a(href="#").pagination__item ...
+							a(href="#").pagination__item 45
+							a(href="#").pagination__item
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.87341 5.6707L3.73486 0.1357C3.5665 -0.0455414 3.29392 -0.0452367 3.12585 0.136638C2.9579 0.318488 2.95833 0.613073 3.12671 0.794455L7.9594 6.00002L3.12654 11.2056C2.95818 11.387 2.95775 11.6814 3.12567 11.8632C3.20993 11.9544 3.32031 12 3.43069 12C3.54079 12 3.65073 11.9547 3.73484 11.8642L8.87341 6.32932C8.9545 6.24218 9 6.12358 9 6.00002C9 5.87646 8.95437 5.75801 8.87341 5.6707Z" fill="#262028"/></svg>
+
+					.page-catalog-inner__slider.page-catalog-inner__slider-content.mb-100.block-slider-three
+						.slider__top
+							h2
+								| Хиты продаж
+								span
+									span 12 343
+									span товаров
+							.slider__arrows
+								.arr__lft
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11.2752L8.35321 12L3 6L8.35321 -2.82721e-08L9 0.724754L4.29382 5.99949L9 11.2752Z" fill="#3E3E3E"/></svg>
+								.arr__rht
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 0.724753L3.64679 2.82721e-08L9 6L3.64679 12L3 11.2752L7.70618 6.00051L3 0.724753Z" fill="#3E3E3E"/></svg>
+						.slider__content
+							+card
+							+card
+							+card
+							+card
+							+card
+
+					.page-catalog-inner__slider.page-catalog-inner__slider-content.mb-100.block-slider-three
+						.slider__top
+							h2
+								| Просмотренные товары
+								span
+									span 46
+									span товаров
+							.slider__arrows.slider__arrows_fix
+								.arr__lft
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11.2752L8.35321 12L3 6L8.35321 -2.82721e-08L9 0.724754L4.29382 5.99949L9 11.2752Z" fill="#3E3E3E"/></svg>
+								.arr__rht
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 0.724753L3.64679 2.82721e-08L9 6L3.64679 12L3 11.2752L7.70618 6.00051L3 0.724753Z" fill="#3E3E3E"/></svg>
+						.slider__center
+							.slider__tags
+								.tag.tag_active Все
+								.tag Люстры (34)
+								.tag Светильники (12)
+							.slider__btns
+								a(href="#").compare
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5188 12.0153L15.5037 5.64494C15.4465 5.52399 15.3465 5.42874 15.2246 5.38224L11.5075 3.94234C11.5577 2.4047 9.71933 1.66699 8.81237 2.89832C8.80678 2.89614 5.09633 1.45885 5.10025 1.46038C4.8625 1.36859 4.59494 1.48055 4.4805 1.72244L1.48339 8.05655C1.44425 8.13933 1.42748 8.2364 1.42992 8.31398C1.43859 10.3703 3.01292 12.0404 4.947 12.0404C6.88166 12.0404 8.45635 10.3693 8.46412 8.31216C8.4664 8.23227 8.44845 8.13556 8.40955 8.05424L5.95552 2.92928L8.49335 3.91237C8.49965 4.33133 8.65547 4.72428 8.93454 5.02126C9.09914 5.19644 9.29267 5.32251 9.49888 5.39963V15.2827H9.40975C7.98285 15.2827 6.82196 16.5182 6.82196 18.0368C6.82196 18.332 7.04683 18.5714 7.32419 18.5714H12.678C12.9553 18.5714 13.1802 18.332 13.1802 18.0368C13.1802 16.5182 12.0193 15.2827 10.5924 15.2827H10.5033V5.39966C10.7468 5.30858 10.9645 5.15307 11.1402 4.93773L14.3525 6.18209L11.5933 12.0154C11.554 12.0984 11.5374 12.1954 11.5398 12.2729C11.5486 14.3287 13.1225 15.9983 15.0561 15.9983C16.9897 15.9983 18.5636 14.3286 18.5723 12.2727C18.5751 12.1848 18.5545 12.0906 18.5188 12.0153ZM4.93174 3.14562L7.14242 7.76242H2.74717L4.93174 3.14562ZM4.947 10.9713C3.73335 10.9713 2.71791 10.0509 2.4846 8.83147H7.40941C7.1761 10.0509 6.16066 10.9713 4.947 10.9713ZM10.5924 16.3518C11.29 16.3518 11.8837 16.8344 12.0941 17.5023H7.90809C8.11855 16.8344 8.71222 16.3518 9.40979 16.3518H10.5924ZM9.6448 4.26534C9.44833 4.05623 9.44833 3.71599 9.6448 3.50689C9.96023 3.17117 10.505 3.40964 10.505 3.88611C10.505 4.36276 9.9601 4.60091 9.6448 4.26534ZM15.0554 7.07382L17.2549 11.7212H12.857L15.0554 7.07382ZM15.0561 14.9293C13.8429 14.9293 12.8278 14.0092 12.5945 12.7903H17.5176C17.2843 14.0092 16.2692 14.9293 15.0561 14.9293Z" fill="#00A887"/></svg>
+									span Сравнить эти товары
+								a(href="#").clear
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0011 18.5713C5.27464 18.5713 1.42969 14.7264 1.42969 9.9999C1.42969 5.27342 5.27464 1.42847 10.0011 1.42847C14.7276 1.42847 18.5725 5.27342 18.5725 9.9999C18.5725 14.7264 14.7276 18.5713 10.0011 18.5713ZM10.0011 2.4999C5.86542 2.4999 2.50112 5.8642 2.50112 9.9999C2.50112 14.1356 5.86542 17.4999 10.0011 17.4999C14.1368 17.4999 17.5011 14.1356 17.5011 9.9999C17.5011 5.8642 14.1368 2.4999 10.0011 2.4999Z" fill="#F86A45"/><path d="M7.02975 13.5713C6.87603 13.5713 6.72232 13.513 6.60553 13.3953C6.37107 13.1609 6.37107 12.7808 6.60553 12.5463L12.5475 6.60431C12.7821 6.36985 13.1622 6.36985 13.3967 6.60431C13.6312 6.83876 13.6312 7.21886 13.3967 7.45346L7.45455 13.3953C7.33615 13.513 7.18259 13.5713 7.02975 13.5713Z" fill="#F86A45"/><path d="M12.9716 13.5713C12.8181 13.5713 12.6644 13.513 12.5476 13.3953L6.60564 7.45353C6.37104 7.21906 6.37104 6.83891 6.60564 6.60443C6.84009 6.36981 7.2202 6.36981 7.45465 6.60443L13.3966 12.547C13.6312 12.7814 13.6312 13.1616 13.3966 13.3961C13.2791 13.513 13.1254 13.5713 12.9716 13.5713Z" fill="#F86A45"/></svg>
+									span Очистить весь список (46)
+						.slider__content
+							+card
+							+card
+							+card
+							+card
+							+card
+
+					.page-catalog-inner__slider.page-catalog-inner__slider-content.mb-100.block-slider-three
+						.slider__top
+							h2
+								| Новинки
+								span
+									span 12 345
+									span товаров
+							.slider__arrows
+								.arr__lft
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11.2752L8.35321 12L3 6L8.35321 -2.82721e-08L9 0.724754L4.29382 5.99949L9 11.2752Z" fill="#3E3E3E"/></svg>
+								.arr__rht
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 0.724753L3.64679 2.82721e-08L9 6L3.64679 12L3 11.2752L7.70618 6.00051L3 0.724753Z" fill="#3E3E3E"/></svg>
+						.slider__content
+							+card
+							+card
+							+card
+							+card
+							+card
+
+					.page-catalog-inner__text.mb-100
+						p Заказать модную люстру можно в любое помещение, будь то детская, спальня, кабинет или столовая. Этот предмет придает интерьеру элегантность и наполняет комнату рассеянными лучами. Такой свет не подходит для чтения или кропотливой работы, но комфортен для длительного пребывания в помещении.
+						p Покупая красивую стильную люстру в небольшую кухню или прихожую, следует учитывать ее габариты и количество ламп. Подойдут компактные накладные варианты, а в большую гостиную - декорированный прибор с регулировкой мощности света. Для создания дополнительного освещения или расстановки акцентов также можно разместить несколько маленьких светильников.
+						.img
+							.txt
+								h2 Экономия и функциональность
+								p Существуют потолочные люстры с галогенными, люминесцентными и светодиодными лампочками, а также комбинированные решения. Наиболее экономичны LED-лампы. Они работают до 50 тысяч часов и могут создавать динамическое освещение. Покупая светильник, проверьте перечень допустимых типов ламп.
+								p Для комфорта использования люстры оснащают дополнительными функциями:
+								ul
+									li диммером - для создания динамического освещения;
+									li вентилятором - успешно заменяет сплит-систему;
+									li пультом управления – для дистанционной регулировки мощности и температуры свечения.
+							img(src="img/catalog/text-image1.png" alt="Photo")
+						h2 Стиль
+						p Современные люстры имеют самые разные формы и внешний вид. Для любого помещения можно найти вариант потолочного светильника: от компактных накладных моделей до экстравагантных каскадов, свисающих почти до самого пола. Вот несколько популярных направлений:
+						ul
+							li Любители роскоши оценят отделанные хрусталем варианты от компании Eglo в помпезном викторианском стиле или модерне.
+							li Весьма самобытно выглядит дизайнерская светотехника от бренда Lightstar. Она не отвлекает внимания от обстановки, но в то же время наполняет пространство равномерным светом.
+							li На пике актуальности потолочные лампы в стиле лофт - аскетичные из переработанной древесины.
+						h2 Как определить размер?
+						p Дизайнеры умело группируют точечное освещение в строгие ряды или хаотичные ансамбли, создавая игру света и тени. Профессионалы советуют отдавать предпочтение крупным моделям – тогда не придется приобретать дополнительные светильники. Особенно внимательными стоит быть при покупке люстры в обеденную зону - ее диаметр не должен выходить за рамки стола.
+						p Для того чтобы быстро соотнести габариты люстры с размером стола, нужно вычесть из ширины стола 30 см - этот прием работает для классических овальных или прямоугольных столов, у которых большая сторона рассчитана на три персоны.
+						p Если речь идет о спальне, гостиной, детской или кабинете, то формула звучит следующим образом: размер потолочной люстры (в сантиметрах) = ширина помещения + его длина (в метрах), умноженные на 10. Т.е. если параметры комнаты 3x4 метра, то светильник понадобится длиной около 70 см ((3+4)x10=70 см).
+						.img
+							.txt
+								h2 На какую высоту вешать?
+								p От пола до нижней точки светильника должно быть расстояние не менее 190 см (для комнат с потолками 250 см). Исключение составляет лишь столовая - в этом случае изделие можно разместить пониже, на расстоянии 70-80 см над столом.
+								p Для точного расчета высоты люстры возьмите высоту комнаты и поделите на 4. Итого, 250/4=62,5 см. Выбирайте изделия, не превышающие данный показатель.
+							img(src="img/catalog/text-image2.jpg" alt="Photo")
+						h2 Как ухаживать?
+						p Большинство моделей не требуют особого ухода и сохраняют свою привлекательность на протяжении всего срока службы. Люстры с металлическими плафонами с годами обретают так называемый эффект состаривания, от чего выглядят благороднее.
+						p Однако источники света, висящие в кухне, могут загрязняться больше, чем осветительные приборы в других уголках квартиры. Поэтому сюда лучше покупать модели с абажурами из легко моющихся материалов – пластмассы, акрила, стекла, металла.
+						p Вернуть потолочному светильнику первозданный лоск довольно просто - достаточно вооружиться влажной и сухой тряпочками и протереть абажуры и фурнитуру. При работе со стеклом лучше использовать перчатки - так на плафонах не останутся следы от рук.Предотвратить появление пыли можно с помощью специальных средств или же воды с уксусом. Избавиться от паутины занесколько секунд поможет обычный пылесос. В целях безопасности на момент чистки необходимо выключить свет.
+						h2 Дополнительные рекомендации
+						ul
+							li Учитывайте вес изделия. Тяжелые приборы (более 20 кг) должны крепиться особенно надежно.
+							li Если потолок сводчатый, лучше использовать для освещения светодиоды. Они служат дольше всех прочих видов, и их не придется часто менять, что затруднительно при высоко висящих светильниках.
+							li Если не хотите тратить много времени на протирание многочисленных деталей от пыли, покупайте небольшие изделия. При правильном подборе лаконичные потолочные таблетки и мини-варианты будут прекрасно смотреться в комнате.
+
+
+
+			+email
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

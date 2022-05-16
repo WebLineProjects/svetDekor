@@ -1,0 +1,781 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main
+
+
+		.wrapper
+
+			.popups.mb-100
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="one-clock").show-more
+					span Купить в один клик
+
+				.popup.popup_one-clock
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Купить в один клик
+						form(action="#")
+							label
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" required placeholder="+7(495) 343-34-43").popup-phone-input
+								p.p-error Поля отмечены * обязательны для заполнения!
+							label
+								span Комментарий к вашему заказу
+								textarea
+							button(type="submit") Купить в 1 клик
+							input(type="checkbox")#chPop1
+							label(for="chPop1").label-checkbox Я ознакомился и принимаю 
+								a(href="#") Политику конфиденциальности 
+								| и 
+								a(href="#") Условия продажи.
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="login-register").show-more
+					span Вход/регистрация
+
+				.popup.popup_login-register
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Вход/регистрация
+						p.subtitle Войти или зарегистрироваться с помощью соц. сетей:
+						form(action="#")
+
+							ul.form__socials
+								li.li_vk
+									a(href="#")
+										img(src="img/popups/Icovk.svg" alt="Ico")
+										span Войти
+								li.li_fb
+									a(href="#")
+										img(src="img/popups/Icofacebook.svg" alt="Ico")
+										span Войти
+								li.li_gg
+									a(href="#")
+										img(src="img/popups/Icogmail.svg" alt="Ico")
+										span Войти
+								li.li_ml
+									a(href="#")
+										img(src="img/popups/Icomailru.svg" alt="Ico")
+										span Войти
+
+							.form__or
+								span или
+
+							.label-switch
+
+								label.inpHiddenVal.inpHiddenVal-email
+									span E-mail
+										span *
+									input(type="email" placeholder="putin@yandex.ru")
+								label.inpHiddenVal.inpHiddenVal-phone
+									span Номер телефона
+										span *
+									.input
+										img(src="img/icoFlag.svg" alt="Flag")
+										input(type="text" placeholder="+7(495) 343-34-43").popup-phone-input
+								.select
+									input(type="hidden")
+									.select__head
+										img(src="img/popups/Icomail.svg" alt="Ico")
+									.select__body
+										.select__item(data-change="email").select__item_active
+											img(src="img/popups/Icomail.svg" alt="Ico")
+										.select__item(data-change="phone")
+											img(src="img/popups/Icophone.svg" alt="Ico")
+							.form__bottom
+								input(type="checkbox")#idPopFormReg
+								label.label-checkbox(for="idPopFormReg") Запомнить меня
+								a(href="#").forgot Забыли пароль?
+							button(type="submit") Войти или зарегистрироваться
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register").show-more
+					span Регистрация
+
+				.popup.popup_register
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						p.subtitle Похоже Вы у нас впервые?
+						form(action="#")
+
+							label.label-mini
+								span E-mail
+									span *
+								input(type="email" required placeholder="putin@yandex.ru")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								.label__top
+									span Придумайте пароль
+										span *
+									span Мин. 8 символов
+								.input.input_pass
+									input(type="password" name="passGroup1" required placeholder="*************")
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Повторите пароль
+									span *
+								.input.input_pass
+									input(type="password" name="passGroup1" required placeholder="*************")
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+								p.p-error Поля отмечены * обязательны для заполнения!
+								p.p-error-pass Пароли не совпадают!
+
+							.form__bottom
+								input(type="checkbox")#idPopFormReg1
+								label.label-checkbox(for="idPopFormReg1") Запомнить меня
+								a(href="#").forgot Забыли пароль?
+							button(type="submit") Войти или зарегистрироваться
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="forgot2").show-more
+					span Забыли пароль?
+
+				.popup.popup_forgot2
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Забыли пароль?
+
+						label
+							.label__top
+								span Придумайте пароль
+									span *
+								span Мин. 8 символов
+							.input.input_pass
+								input(type="password" required name="passGroup2" placeholder="*************")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+							p.p-error Поля отмечены * обязательны для заполнения!
+
+						label
+							span Повторите пароль
+								span *
+							.input.input_pass
+								input(type="password" required name="passGroup2" placeholder="*************")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+							p.p-error Поля отмечены * обязательны для заполнения!
+							p.p-error-pass Пароли не совпадают!
+
+						button(type="submit").btn-green Готово
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register4").show-more
+					span Регистрация
+
+				.popup.popup_register4
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						p.subtitle Похоже Вы у нас впервые?
+						form(action="#")
+
+							label.label-mini
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" required value="+7(495) 343-34-43").popup-phone-input
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								.label__top
+									span Придумайте пароль
+										span *
+									span Мин. 8 символов
+								.input.input_pass
+									input(type="password" required name="passGroup3" placeholder="*************")
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Повторите пароль
+									span *
+								.input.input_pass
+									input(type="password" required name="passGroup3" placeholder="*************")
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0016 6C8.27547 6 4.55485 8.00156 1.71484 11.9993C7.39485 20.0002 16.6084 20.0002 22.2884 11.9993C19.4484 8.00156 15.7277 6 12.0016 6ZM12.0016 16.0024C9.7285 16.0024 7.87919 14.2096 7.87919 11.9993C7.87919 9.789 9.7285 7.9908 12.0016 7.9908C14.2747 7.9908 16.1185 9.789 16.1185 11.9993C16.1185 14.2096 14.2747 16.0024 12.0016 16.0024Z" fill="#AFB3BB"/><path d="M12.0016 14.0008C13.1383 14.0008 14.0598 13.1047 14.0598 11.9994C14.0598 10.8941 13.1383 9.99805 12.0016 9.99805C10.8649 9.99805 9.94336 10.8941 9.94336 11.9994C9.94336 13.1047 10.8649 14.0008 12.0016 14.0008Z" fill="#AFB3BB"/></svg>
+								p.p-error Поля отмечены * обязательны для заполнения!
+								p.p-error-pass Пароли не совпадают!
+
+							.form__bottom
+								input(type="checkbox")#idPopFormReg1
+								label.label-checkbox(for="idPopFormReg1") Запомнить меня
+								a(href="#").forgot Забыли пароль?
+							button(type="submit") Зарегистрироваться
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register1").show-more
+					span Регистрация
+
+				.popup.popup_register1
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						p.subtitle Представьтесь пожалуйста!
+						form(action="#")
+
+							label
+								span E-mail
+									span *
+								input(type="email" required placeholder="putin@yandex.ru")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Фамилия
+									span *
+								input(type="text" required placeholder="putin@yandex.ru")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+
+							button(data-popup="register-done") Готово
+
+				.popup.popup_register-done
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Вы зарегистрированы!
+						.sides
+							img(src="img/popups/Icocheckmark.svg" alt="Ico")
+							p На Ваш E-mail адрес, указанный при регистрации придет письмо с подтверждением Вашего e-mail адреса
+						.buttons
+							a(href="#").btn-purple Проверить почту
+							a(href="#").btn-green Перейти к покупкам
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="order-success").show-more
+					span Ваша заявка принята!
+
+				.popup.popup_order-success
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Ваша заявка принята!
+						.sides
+							img(src="img/popups/Icocheckmark.svg" alt="Ico")
+							p В ближайшее время с Вами свяжется наш менеджер <br />для подтверждения заказа!
+						a(href="#").btn-green Вернуться к покупкам
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register2").show-more
+					span Регистрация
+
+				.popup.popup_register2
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						form(action="#")
+
+							label.label-mini
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" disabled value="+7(495) 343-34-43").popup-phone-input
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							p.p-top На ваш номер телефона придет смс с кодом подтверждения регистрации, введите код из смс в поле ниже
+
+							label.label-mini
+								span Код в смс
+									span *
+								input(type="text" required placeholder="4576")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Не приходит смс?
+								.sides
+									button.btn-purple Отправить повторно
+									p Повторная отправка смс будет доступна через 60 секунд
+
+
+							button(type="submit").btn-green Зарегистрироваться
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register5").show-more
+					span Регистрация5
+
+				.popup.popup_register5
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						form(action="#")
+
+							label.label-mini
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" disabled value="+7(495) 343-34-43").popup-phone-input
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							p.p-top На ваш номер телефона придет смс с кодом подтверждения регистрации, введите код из смс в поле ниже
+
+							label.label-mini
+								span Код в смс
+									span *
+								input(type="text" required placeholder="4576")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Не приходит смс?
+								.sides
+									button.btn-purple.counting 59 сек
+									p Повторная отправка смс будет доступна через 60 секунд
+
+
+							button(type="submit" disabled).btn-green.disabled Зарегистрироваться
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="forgot3").show-more
+					span Забыли пароль?
+
+				.popup.popup_forgot3
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Забыли пароль?
+						form(action="#")
+
+							label.label-mini
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" disabled value="+7(495) 343-34-43").popup-phone-input
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							p.p-top На ваш номер телефона придет смс с кодом подтверждения регистрации, введите код из смс в поле ниже
+
+							label.label-mini
+								span Код в смс
+									span *
+								input(type="text" required placeholder="4576")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Не приходит смс?
+								.sides
+									button.btn-purple.counting 59 сек
+									p Повторная отправка смс будет доступна через 60 секунд
+
+
+							button(type="submit" disabled).btn-green.disabled Отправить
+							p.success Регистрируясь, вы подтверждаете свое согласие <br />с 
+								a(href="#") Правилами пользования 
+								| и 
+								a(href="#") Политикой конфиденциальности
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="register3").show-more
+					span Регистрация
+
+				.popup.popup_register3
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Регистрация
+						form(action="#")
+
+							label.label-mini
+								span E-mail
+									span *
+								input(type="text" disabled value="putin@yandex.ru")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							p.p-top На ваш e-mail адрес отправлено сообщение с кодом восстановления пароля, введите код из письма в поле ниже!
+
+							label.label-mini
+								span Код в письма
+									span *
+								input(type="text" required placeholder="4576")
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								.sides
+									button.btn-purple Проверить почту
+									p
+										a(href="#") Отправить код на e-mail <br />адрес еще раз
+
+
+							button(type="submit").btn-green Отправить
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="town").show-more
+					span Ваш город Москва?
+
+				.popup.popup_town
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Ваш город Москва?
+
+						.buttons
+							button.btn-green Да
+							button.btn-red Нет
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="town2").show-more
+					span Укажите ваш город
+
+				.popup.popup_town2
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Укажите ваш город
+
+						label
+							span Страна
+								span *
+							.select
+								.select__head
+									span Россия
+								.select__body
+									.select__item
+										span Россия
+									.select__item
+										span Казахстан
+									.select__item
+										span Украина
+									.select__item
+										span Узбекистан
+									.select__item
+										span Беларусь
+						label
+							span Страна
+								span *
+							.select
+								.select__head
+									span Казань
+								.select__body
+									.select__item
+										span Казань
+									.select__item
+										span Москва
+
+						button.btn-green Готово
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="forgot").show-more
+					span Забыли пароль?
+
+				.popup.popup_forgot
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Забыли пароль?
+
+						p.subtitle Введите ваш телефон или e-mail указанный <br />при регистрации, чтобы восстановить пароль!
+
+						.label-switch
+
+							label.inpHiddenVal.inpHiddenVal-email
+								span E-mail
+									span *
+								input(type="email" required placeholder="putin@yandex.ru")
+							label.inpHiddenVal.inpHiddenVal-phone
+								span Номер телефона
+									span *
+								.input
+									img(src="img/icoFlag.svg" alt="Flag")
+									input(type="text" required placeholder="+7(495) 343-34-43").popup-phone-input
+							.select
+								input(type="hidden")
+								.select__head
+									img(src="img/popups/Icomail.svg" alt="Ico")
+								.select__body
+									.select__item(data-change="email").select__item_active
+										img(src="img/popups/Icomail.svg" alt="Ico")
+									.select__item(data-change="phone")
+										img(src="img/popups/Icophone.svg" alt="Ico")
+
+						button.btn-green Отправить
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+				button(data-popup="review").show-more
+					span Оставить отзыв
+
+				.popup.popup_review
+					.popup__bgd
+					.popup__content
+						.popup__close
+							img(src="img/popup-close.svg" alt="Close")
+						h2 Оставить отзыв
+
+						form(action="#")
+
+							label.rating-label
+								span Оцените товар
+									span *
+								.rating__block
+									input(type="radio" name="rating-1")#rate-5
+									label(for="rate-5")
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9655 9.11342C23.8829 8.84655 23.6629 8.65206 23.398 8.61176L15.9579 7.47837L12.6305 0.410852C12.5121 0.15926 12.2676 0 12 0C11.7324 0 11.488 0.15926 11.3695 0.410852L8.04198 7.47837L0.602007 8.61176C0.337211 8.65206 0.117134 8.84655 0.0344468 9.11338C-0.0482872 9.38025 0.0207125 9.67317 0.212384 9.86899L5.59586 15.3703L4.32518 23.1383C4.2799 23.4149 4.38837 23.6943 4.60488 23.8593C4.72737 23.9525 4.87244 24 5.01822 24C5.13016 24 5.24247 23.972 5.34532 23.9153L12 20.2477L18.6544 23.9153C18.8913 24.0458 19.1784 24.0241 19.3949 23.8592C19.6114 23.6943 19.7199 23.4148 19.6747 23.1382L18.4036 15.3703L23.7876 9.86894C23.9793 9.67317 24.0483 9.38025 23.9655 9.11342Z" fill="#E4E4E4"/></svg>
+									input(type="radio" name="rating-1")#rate-4
+									label(for="rate-4")
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9655 9.11342C23.8829 8.84655 23.6629 8.65206 23.398 8.61176L15.9579 7.47837L12.6305 0.410852C12.5121 0.15926 12.2676 0 12 0C11.7324 0 11.488 0.15926 11.3695 0.410852L8.04198 7.47837L0.602007 8.61176C0.337211 8.65206 0.117134 8.84655 0.0344468 9.11338C-0.0482872 9.38025 0.0207125 9.67317 0.212384 9.86899L5.59586 15.3703L4.32518 23.1383C4.2799 23.4149 4.38837 23.6943 4.60488 23.8593C4.72737 23.9525 4.87244 24 5.01822 24C5.13016 24 5.24247 23.972 5.34532 23.9153L12 20.2477L18.6544 23.9153C18.8913 24.0458 19.1784 24.0241 19.3949 23.8592C19.6114 23.6943 19.7199 23.4148 19.6747 23.1382L18.4036 15.3703L23.7876 9.86894C23.9793 9.67317 24.0483 9.38025 23.9655 9.11342Z" fill="#E4E4E4"/></svg>
+									input(type="radio" name="rating-1")#rate-3
+									label(for="rate-3")
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9655 9.11342C23.8829 8.84655 23.6629 8.65206 23.398 8.61176L15.9579 7.47837L12.6305 0.410852C12.5121 0.15926 12.2676 0 12 0C11.7324 0 11.488 0.15926 11.3695 0.410852L8.04198 7.47837L0.602007 8.61176C0.337211 8.65206 0.117134 8.84655 0.0344468 9.11338C-0.0482872 9.38025 0.0207125 9.67317 0.212384 9.86899L5.59586 15.3703L4.32518 23.1383C4.2799 23.4149 4.38837 23.6943 4.60488 23.8593C4.72737 23.9525 4.87244 24 5.01822 24C5.13016 24 5.24247 23.972 5.34532 23.9153L12 20.2477L18.6544 23.9153C18.8913 24.0458 19.1784 24.0241 19.3949 23.8592C19.6114 23.6943 19.7199 23.4148 19.6747 23.1382L18.4036 15.3703L23.7876 9.86894C23.9793 9.67317 24.0483 9.38025 23.9655 9.11342Z" fill="#E4E4E4"/></svg>
+									input(type="radio" name="rating-1")#rate-2
+									label(for="rate-2")
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9655 9.11342C23.8829 8.84655 23.6629 8.65206 23.398 8.61176L15.9579 7.47837L12.6305 0.410852C12.5121 0.15926 12.2676 0 12 0C11.7324 0 11.488 0.15926 11.3695 0.410852L8.04198 7.47837L0.602007 8.61176C0.337211 8.65206 0.117134 8.84655 0.0344468 9.11338C-0.0482872 9.38025 0.0207125 9.67317 0.212384 9.86899L5.59586 15.3703L4.32518 23.1383C4.2799 23.4149 4.38837 23.6943 4.60488 23.8593C4.72737 23.9525 4.87244 24 5.01822 24C5.13016 24 5.24247 23.972 5.34532 23.9153L12 20.2477L18.6544 23.9153C18.8913 24.0458 19.1784 24.0241 19.3949 23.8592C19.6114 23.6943 19.7199 23.4148 19.6747 23.1382L18.4036 15.3703L23.7876 9.86894C23.9793 9.67317 24.0483 9.38025 23.9655 9.11342Z" fill="#E4E4E4"/></svg>
+									input(type="radio" required name="rating-1")#rate-1
+									label(for="rate-1")
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9655 9.11342C23.8829 8.84655 23.6629 8.65206 23.398 8.61176L15.9579 7.47837L12.6305 0.410852C12.5121 0.15926 12.2676 0 12 0C11.7324 0 11.488 0.15926 11.3695 0.410852L8.04198 7.47837L0.602007 8.61176C0.337211 8.65206 0.117134 8.84655 0.0344468 9.11338C-0.0482872 9.38025 0.0207125 9.67317 0.212384 9.86899L5.59586 15.3703L4.32518 23.1383C4.2799 23.4149 4.38837 23.6943 4.60488 23.8593C4.72737 23.9525 4.87244 24 5.01822 24C5.13016 24 5.24247 23.972 5.34532 23.9153L12 20.2477L18.6544 23.9153C18.8913 24.0458 19.1784 24.0241 19.3949 23.8592C19.6114 23.6943 19.7199 23.4148 19.6747 23.1382L18.4036 15.3703L23.7876 9.86894C23.9793 9.67317 24.0483 9.38025 23.9655 9.11342Z" fill="#E4E4E4"/></svg>
+
+							label.label-mini
+								span Ваше Имя
+									span *
+								input(type="text" required)
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							label
+								span Достоинства
+								input(type="text")
+
+							label
+								span Недостатки
+								input(type="text")
+
+							label
+								span Отзыв о товаре
+									span *
+								textarea(required)
+								p.p-error Поля отмечены * обязательны для заполнения!
+
+							button(type="submit").btn-purple
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0483 1.71429C12.0426 1.71981 12.0314 1.71981 12.0146 1.71981C6.33429 1.71981 1.71484 6.25593 1.71484 11.8338C1.71484 14.1101 2.50627 16.3203 3.9544 18.1006L2.45575 21.5178C2.33227 21.7989 2.46698 22.1241 2.74762 22.2398C2.84866 22.2839 2.96092 22.295 3.06756 22.2784L8.56262 21.3304C9.66276 21.7217 10.819 21.9202 11.9865 21.9146C17.6668 21.9146 22.2862 17.3785 22.2862 11.8007C22.2975 6.23939 17.7117 1.71981 12.0483 1.71429ZM11.9921 20.8178C10.9088 20.8178 9.83676 20.6249 8.82082 20.2501C8.7254 20.2115 8.62437 20.206 8.52333 20.2226L3.89828 21.0162L5.1219 18.2218C5.20609 18.0289 5.17241 17.8029 5.03209 17.6431C4.36976 16.888 3.84215 16.0282 3.47169 15.0967C3.05634 14.055 2.84304 12.9471 2.84304 11.8283C2.84304 6.8567 6.96294 2.81663 12.0202 2.81663C17.0662 2.80561 21.1637 6.81261 21.1693 11.7676C21.1693 11.7786 21.1693 11.7897 21.1693 11.8007C21.1693 16.7778 17.0494 20.8178 11.9921 20.8178Z" fill="white"/><path d="M11.5532 9.79987H8.52223C8.21352 9.79987 7.96094 10.0479 7.96094 10.351C7.96094 10.6542 8.21352 10.9022 8.52223 10.9022H11.5532C11.8619 10.9022 12.1145 10.6542 12.1145 10.351C12.1145 10.0479 11.8619 9.79987 11.5532 9.79987Z" fill="white"/><path d="M15.4823 12.5559H8.52223C8.21352 12.5559 7.96094 12.8039 7.96094 13.1071C7.96094 13.4102 8.21352 13.6582 8.52223 13.6582H15.4823C15.791 13.6582 16.0436 13.4102 16.0436 13.1071C16.0436 12.8039 15.791 12.5559 15.4823 12.5559Z" fill="white"/></svg>
+								span Оставить отзыв
+
+							input(type="checkbox")#chREview1
+							label(for="chREview1").label-checkbox Я ознакомился и принимаю 
+								a(href="#") Политику конфиденциальности 
+								| и 
+								a(href="#") Условия продажи.
+
+
+				<!-- НУЖНО БРАТЬ ТОЛЬКО КНОПКУ И БЛОК POPUP -->
+
+
+
+
+			
+			+email
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

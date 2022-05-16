@@ -1,0 +1,322 @@
+@media screen and (max-width:1280px) {
+  .navigation {
+    min-width: 320px;
+    max-width: 320px
+  }
+}
+@media screen and (max-width:992px) {
+  .mb-100 {
+    margin-bottom: 80px
+  }
+  body {
+    margin-bottom: 81px
+  }
+  .show-more,
+  .show-more-link {
+    margin-top: 28px
+  }
+  .navigation {
+    max-width: 100%;
+    min-width: 0;
+    border: none;
+    margin-right: 0
+  }
+  .navigation__top {
+    display: none
+  }
+  .navigation__list {
+    padding: 12px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -20px;
+    margin-left: -20px;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    -webkit-box-shadow: 0 10px 24px rgba(147,147,147,.2);
+    box-shadow: 0 10px 24px rgba(147,147,147,.2);
+    margin-bottom: 28px
+  }
+  .navigation__tags {
+    overflow: auto;
+    white-space: nowrap;
+    margin-right: -20px;
+    margin-left: -8px
+  }
+  .navigation__tags ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin: 0
+  }
+  .navigation__list li {
+    margin-right: 28px
+  }
+  .navigation__list a {
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 18px 20px
+  }
+  .navigation__list a span {
+    margin-right: 12px
+  }
+  .card .card__main {
+    border: 1px solid #f4f2ee;
+    padding: 15px 12px
+  }
+  .card__nav {
+    top: 140px
+  }
+  .card__buttons .button__item {
+    min-width: 40px;
+    width: 40px;
+    height: 40px
+  }
+  .card__buttons .button__item svg {
+    width: 20px
+  }
+  .card__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    opacity: 1;
+    position: static;
+    padding: 0;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important
+  }
+  .card__buttons {
+    display: block;
+    opacity: 1;
+    z-index: 2
+  }
+  .card__info {
+    display: block;
+    margin-bottom: 20px
+  }
+  .card-have-video .card__video {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 0;
+    margin-top: 20px
+  }
+  .card__photo {
+    height: 160px;
+    max-width: 160px
+  }
+  .card__title h3 {
+    font-size: 14px;
+    line-height: 18px
+  }
+  .card__stock span {
+    font-size: 12px;
+    line-height: 14px
+  }
+  .card__title {
+    margin-bottom: 6px;
+    min-height: 36px
+  }
+  .card__size {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .card__size span {
+    width: 100%;
+    padding-bottom: 8px
+  }
+  .card__size .size__item span {
+    width: auto;
+    padding-bottom: 0
+  }
+  .card__price .price__old {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 12px
+  }
+  .card__price .price__sale {
+    margin-left: 12px
+  }
+  .card__price .price__main {
+    font-size: 16px;
+    line-height: 18px
+  }
+  .section-email p {
+    font-size: 16px;
+    line-height: 24px
+  }
+  .section-email .label-checkbox:before {
+    top: 10px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+  .section-email .sides__rht {
+    width: 100%
+  }
+  .section-email .sides__rht ul {
+    display: none
+  }
+  .section-email .sides__lft {
+    width: 100%;
+    margin-right: 20px
+  }
+  .section-email .sides__lft ul {
+    display: block
+  }
+}
+@media screen and (max-width:700px) {
+  body {
+    margin-bottom: 74px
+  }
+}
+@media screen and (max-width:576px) {
+  .main-title-h1,
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 8px
+  }
+  .mb-100 {
+    margin-bottom: 60px
+  }
+  .breadcrumbs {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 36px
+  }
+  .breadcrumbs a {
+    display: none
+  }
+  .breadcrumbs a.back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #f4f2ee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    margin-right: 20px
+  }
+  .breadcrumbs a.back span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 8px;
+    color: #262028
+  }
+  .breadcrumbs a.back:after {
+    display: none
+  }
+  .section-email .sides__rht h2 {
+    display: none
+  }
+  .section-email p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px
+  }
+  .section-email p br {
+    display: none
+  }
+  .section-email .sides__lft h2 {
+    display: block
+  }
+  .sides {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 8px;
+    margin-bottom: 28px
+  }
+  h2 span {
+    white-space: nowrap
+  }
+  h2 span span {
+    margin-left: 0!important
+  }
+  h2 span span:last-child {
+    display: none
+  }
+  .show-more-link {
+    padding: 16px 20px
+  }
+  .card__photo {
+    max-width: 115px;
+    height: 115px
+  }
+  .card__buttons .button__item {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+    border: none
+  }
+  .card__nav {
+    display: none
+  }
+  .card__review .star {
+    margin: 0
+  }
+  .card__review span {
+    margin-left: 4px
+  }
+  .card__title h3 {
+    font-size: 12px;
+    line-height: 14px
+  }
+  .card__stock img {
+    width: 16px;
+    height: 16px
+  }
+  .card__articul,
+  .card__brand,
+  .card__stock {
+    margin-bottom: 4px
+  }
+  .card__size {
+    display: none
+  }
+  .card__price .price__old {
+    margin-left: 8px
+  }
+  .card__bottom a {
+    display: none
+  }
+  .card__articul span,
+  .card__brand span {
+    font-size: 10px;
+    line-height: 12px
+  }
+  .card__stock span {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 4px
+  }
+  .card__absolute {
+    top: 4px;
+    left: 4px
+  }
+  .card__review {
+    margin-bottom: 3px
+  }
+}

@@ -1,0 +1,265 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-profile
+
+		.page-profile__main
+
+			.wrapper.mb-100
+
+				nav.page-profile__navigation
+					ul
+						li.li_active
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoUser-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoUser-h.svg" alt="Ico").ico-h
+								span Личные данные
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoSearch-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoSearch-h.svg" alt="Ico").ico-h
+								span Корзина
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoBasket-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoBasket-h.svg" alt="Ico").ico-h
+								span История покупок
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoChat-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoChat-h.svg" alt="Ico").ico-h
+								span Избранное
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoCompare-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoCompare-h.svg" alt="Ico").ico-h
+								span Сравнение
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoDoor-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoDoor-h.svg" alt="Ico").ico-h
+								span Просмотренные товары
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoHeart-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoHeart-h.svg" alt="Ico").ico-h
+								span Мои отзывы
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoHistory-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoHistory-h.svg" alt="Ico").ico-h
+								span Мои подписки
+						li
+							a(href="#")
+								.li__ico
+									img(src="img/profile/IcoMail-d.svg" alt="Ico").ico-d
+									img(src="img/profile/IcoMail-h.svg" alt="Ico").ico-h
+								span Выход
+
+
+				.page-profile__personal
+
+					h1.main-title-h1 Личные данные
+
+					.personal__block
+
+						label
+							span Имя
+							input(type="text" placeholder="Владимир")
+						label
+							span Фамилия
+							input(type="text" placeholder="Путин")
+						label
+							span Отчество
+							input(type="text" placeholder="Владимирович")
+
+					.personal__block.personal__block_sex
+
+						input(type="checkbox")#pr-bl1-ch1
+						label.label-checkbox(for="pr-bl1-ch1")
+							span Мужской
+						input(type="checkbox")#pr-bl1-ch2
+						label.label-checkbox(for="pr-bl1-ch2")
+							span Женский
+
+					.personal__block
+
+						label
+							span E-mail
+							input(type="text" placeholder="putin@yandex.ru")
+
+					.personal__block.personal__block_phone
+
+						label
+							span Номер телефона*
+							.input
+								img(src="img/IcoFlag.svg" alt="Ico")
+								input(type="text" placeholder="+7(495) 343-34-43")#pr-bl1-tel1
+						p Этот номер телефона используется при авторизации и оформлении заказа
+
+					.personal__block.personal__block_pass
+
+						h2 Изменить пароль от вашего аккаунта
+
+						label
+							span Старый пароль
+							.input
+								input(type="password" placeholder="*************")
+								.input__eye
+									img(src="img/profile/Ico_eye.svg" alt="Eye")
+						label
+							span Новый пароль
+							.input
+								input(type="password" placeholder="*************")
+								.input__eye
+									img(src="img/profile/Ico_eye.svg" alt="Eye")
+						label
+							span Подверждение нового пароля
+							.input
+								input(type="password" placeholder="*************")
+								.input__eye
+									img(src="img/profile/Ico_eye.svg" alt="Eye")
+
+					.personal__block.personal__block_select
+
+						h2 Дата вашего рождения
+
+						.block__inner
+							label.select_day
+								span День
+								.select
+									.select__head
+										span 13
+									.select__body
+										.select__item
+											span 1
+										.select__item
+											span 2
+										.select__item
+											span 3
+										.select__item
+											span 4
+										.select__item
+											span 5
+										.select__item
+											span 6
+										.select__item
+											span 7
+										.select__item
+											span 8
+							label.select_month
+								span Месяц
+								.select
+									.select__head
+										span Январь
+									.select__body
+										.select__item
+											span Январь
+										.select__item
+											span Февраль
+										.select__item
+											span Март
+										.select__item
+											span Апрель
+										.select__item
+											span Май
+										.select__item
+											span Июнь
+										.select__item
+											span Июль
+										.select__item
+											span Август
+										.select__item
+											span Сентябрь
+										.select__item
+											span Октябрь
+										.select__item
+											span Ноябрь
+										.select__item
+											span Декабрь
+							label.select_year
+								span Год
+								.select
+									.select__head
+										span 1999
+									.select__body
+										.select__item
+											span 1998
+										.select__item
+											span 1999
+										.select__item
+											span 2000
+										.select__item
+											span 2000
+										.select__item
+											span 2001
+										.select__item
+											span 2002
+										.select__item
+											span 2003
+										.select__item
+											span 2004
+										.select__item
+											span 2005
+										.select__item
+											span 2006
+										.select__item
+											span 2007
+										.select__item
+											span 2008
+
+					.personal__block
+
+						button(type="submit").button-save Сохранить
+						button.button-cancel Отменить
+
+						
+
+
+		.wrapper
+
+			+email
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

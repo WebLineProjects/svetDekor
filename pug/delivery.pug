@@ -1,0 +1,289 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-delivery
+
+
+		.wrapper
+
+			h1.main-title-h1 Доставка
+
+			.page-delivery__nav
+				ul
+					li.li_active
+						a(href="#") Курьерская доставка по Москве
+					li
+						a(href="#") Курьерская доставка за МКАД
+					li
+						a(href="#") Самовывоз
+					li
+						a(href="#") Транспортными компаниями
+
+
+			.page-delivery__inner
+				.page-delivery__block.page-delivery__block_show.mb-100
+					h2 Курьерская доставка по Москве
+
+					.page-delivery__points
+						.page-delivery__item
+							h3 Стоимость доставки по Москве <br />в пределах МКАД:
+							p При заказе 
+								b до 1000 ₽ - 
+								span 400 ₽
+							p При заказе 
+								b от 1000 до 3000 ₽ - 
+								span 280 ₽
+							h3 Сроки доставки:
+							p 1-2 дня
+						.page-delivery__item
+							h3 Интервалы доставки за МКАД:
+							p
+								b Понедельник – Пятница:
+							p 09.00 - 18.00
+							p 18.00 - 23.00
+							p 23.00 - 02.00
+							p
+								b Суббота: 
+								| 09.00 - 18.00
+							p
+								span
+									b Воскресенье: 
+									| выходной
+						.page-delivery__item
+							h3 Варианты оплаты:
+							ul
+								li Наличными курьеру;
+								li Банковской картой курьеру;
+								li Безналичным переводом;
+								li
+									span Картой рассрочки -
+									img(src="img/delivery/ico.svg" alt="Ico")
+								li Банковской картой на сайте:
+							.images
+								img(src="img/delivery/Ico1.svg" alt="Ico")
+								img(src="img/delivery/Ico2.svg" alt="Ico")
+								img(src="img/delivery/Ico3.svg" alt="Ico")
+								img(src="img/delivery/Ico4.svg" alt="Ico")
+								img(src="img/delivery/Ico5.svg" alt="Ico")
+								img(src="img/delivery/Ico6.svg" alt="Ico")
+				.page-delivery__block.mb-100
+					h2 Стоимость доставки за пределы МКАД
+					p Для вашего удобства мы разделили территории за пределами МКАД на тарифные зоны.
+
+					.page-delivery__sides
+						.table-ovf
+							table
+								thead
+									tr
+										td
+											span Стоимость товара
+										td
+											span 0-15 км*
+										td
+											span 16-35 км*
+										td
+											span 36-60 км*
+										td
+											span 61-100 км*
+								tbody
+									tr
+										td
+											b до 1 000 ₽
+										td
+											span до 625 ₽
+										td
+											span от 640 ₽
+										td
+											span от 940 ₽
+										td
+											span от 1 315 ₽
+									tr
+										td
+											b от 1 000 ₽ до 3 000 ₽
+										td
+											span до 505 ₽
+										td
+											span от 520 ₽
+										td
+											span от 820 ₽
+										td
+											span от 1 200 ₽
+									tr
+										td
+											b от 3 000 ₽
+										td
+											span до 225 ₽
+										td
+											span от 240 ₽
+										td
+											span от 540 ₽
+										td
+											span от 915 ₽
+						.sides__rht
+							h3 Тарифные зоны:
+							p Используя данную карту, определите, в какую тарифную зону попадает ваш город, чтобы сориентироваться по стоимости доставки.
+
+					.page-delivery__points
+						.page-delivery__item
+							h3 Стоимость доставки по Москве <br />в пределах МКАД:
+							p При заказе 
+								b до 1000 ₽ - 
+								span 400 ₽
+							p При заказе 
+								b от 1000 до 3000 ₽ - 
+								span 280 ₽
+							h3 Сроки доставки:
+							p 1-2 дня
+						.page-delivery__item
+							h3 Интервалы доставки за МКАД:
+							p
+								b Понедельник – Пятница:
+							p 09.00 - 18.00
+							p 18.00 - 23.00
+							p 23.00 - 02.00
+							p
+								b Суббота: 
+								| 09.00 - 18.00
+							p
+								span
+									b Воскресенье: 
+									| выходной
+						.page-delivery__item
+							h3 Варианты оплаты:
+							ul
+								li Наличными курьеру;
+								li Банковской картой курьеру;
+								li Безналичным переводом;
+								li
+									span Картой рассрочки -
+									img(src="img/delivery/ico.svg" alt="Ico")
+								li Банковской картой на сайте:
+							.images
+								img(src="img/delivery/Ico1.svg" alt="Ico")
+								img(src="img/delivery/Ico2.svg" alt="Ico")
+								img(src="img/delivery/Ico3.svg" alt="Ico")
+								img(src="img/delivery/Ico4.svg" alt="Ico")
+								img(src="img/delivery/Ico5.svg" alt="Ico")
+								img(src="img/delivery/Ico6.svg" alt="Ico")
+				.page-delivery__block.mb-100
+					h2 Самовывоз
+
+					.page-delivery__points
+						.page-delivery__item
+							p
+								b Внимание! 
+								| Самовывоз возможен только после 100% предоплаты.
+							p Вы можете забрать товар самостоятельно по будням.
+							p Режим работы: Пн-Пт 10:00-19:00
+							h3 Адрес пункта выдачи:
+							.item
+								img(src="img/delivery/Icogps.svg" alt="Ico")
+								p г. Долгопрудный, Лихачевский проспект, д.18
+							.item
+								img(src="img/delivery/Icometro.svg" alt="Ico")
+								p Новодачная
+							button
+								img(src="img/delivery/Icolocation.svg" alt="Ico")
+								span Проложить маршрут
+						.page-delivery__item
+							h3 Варианты оплаты:
+							ul
+								li Банковской картой на сайте:
+							.images
+								img(src="img/delivery/Ico1.svg" alt="Ico")
+								img(src="img/delivery/Ico2.svg" alt="Ico")
+								img(src="img/delivery/Ico3.svg" alt="Ico")
+								img(src="img/delivery/Ico4.svg" alt="Ico")
+								img(src="img/delivery/Ico5.svg" alt="Ico")
+								img(src="img/delivery/Ico6.svg" alt="Ico")
+				.page-delivery__block.mb-100
+					h2 Доставка транспортными компаниями
+					p Заказ вы можете получить в любом городе России в отделениях транспортных компаний.
+
+					p
+						b До офиса транспортной компании в Москве и Санкт-Петербурге ваш заказ доставит курьерская служба нашего интернет-магазина:
+
+					ul
+						li 400 рублей при заказе до 1 000;
+						li 280 рублей при заказе от 1 000 до 3 000 рублей;
+						li
+							span бесплатно 
+							| при покупке от 3 000 рублей.
+
+					p Наша курьерская служба доставляет заказы до следующих транспортных компаний: ПЭК, Деловые Линии, Байкал Сервис, Мейджик Транс, ЖелДорЭкспресс, ЦАП, ТрансКарго, Глотус, ТК Фаворит Экспресс, ТК Алеко, КИТ и ООО «ТРАНСКАРГО-М»
+					p Для доставки выберите город, в котором вам удобно получить заказ. При получении, необходимо иметь документ, удостоверяющий личность (паспорт, водительские права). Получателем должно являться лицо, сделавшее заказ, чьи персональные данные были указаны при покупке, либо другое лицо с нотариально заверенной доверенностью.
+
+					.page-delivery__points
+						.page-delivery__item
+							h3 Варианты оплаты:
+							ul
+								li Банковской картой на сайте:
+							.images
+								img(src="img/delivery/Ico1.svg" alt="Ico")
+								img(src="img/delivery/Ico2.svg" alt="Ico")
+								img(src="img/delivery/Ico3.svg" alt="Ico")
+								img(src="img/delivery/Ico4.svg" alt="Ico")
+								img(src="img/delivery/Ico5.svg" alt="Ico")
+								img(src="img/delivery/Ico6.svg" alt="Ico")
+
+					h2 Важно!
+
+					p Если вы выбрали другую транспортную компанию, с помощью которой планируете дальнейшую доставку, то наша компания оформляет услугу забора заказа с нашего склада, за счет покупателя по стоимости выбранной транспортной компании. Мы подготовили 
+						span список транспортных компаний, 
+						| которые имеют услугу забора.
+
+					h2 При получении следует придерживаться простых, <br />но важных правил:
+
+					ul
+						li проверьте целостность упаковки;
+						li проверьте соответствие товара заказанному;
+						li осмотрите целостность и работоспособность товара, изучите комплектацию заказа, подробное описание комплектации приложено к заказу;
+						li при отсутствии претензий к качеству, внешнему виду и комплектации товара, подпишите акт приемки и оплатите заказ в рублях;
+						li получите товарный и кассовый чеки, инструкцию по эксплуатации, гарантийный талон на купленное изделие.
+
+					h2 Обращаем внимание!
+
+					p Сотрудники транспортной компании не могут квалифицированно консультировать относительно технических характеристик, функций, правильности работы товара.
+					p Для получения ответов на возникшие вопросы обращайтесь к консультантам нашего интернет-магазина по телефону 
+						a(href="tel:88003433434") 8 (800) 343-34-34 
+						| и электронной почте: 
+						a(href="mailto:info@svetdecor.ru") info@svetdecor.ru
+				
+			+email
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

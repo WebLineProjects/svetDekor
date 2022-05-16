@@ -1,0 +1,149 @@
+.page-recall{
+	input[type="checkbox"]{
+		display: none;
+	}
+	.label-checkbox{
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 20px;
+		color: #3E3E3E;
+		padding-left: 44px;
+		position: relative;
+		cursor: pointer;
+		a{
+			color: #00A887;
+			text-decoration: underline;
+			&:hover{
+				color: #018A6F;
+			}
+			&:active{
+				color: #0BCAA4;
+			}
+		}
+		&:before{
+			content: '';
+			background: #FFFFFF;
+			border: 1px solid #A4A4A4;
+			width: 28px;
+			min-width: 28px;
+			height: 28px;
+			border-radius: 4px;
+			display: block;
+			margin-right: 16px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+		}
+	}
+	input[type="checkbox"]:checked + label:before{
+		border: 1px solid #00A887;
+		background: url('../img/section-email/icoCheck.svg') no-repeat;
+		background-position: center;
+	}
+
+
+
+	&__form{
+		max-width: 644px;
+		button{
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 16px;
+			color: #FFFFFF;
+			background: #00A887;
+			border-radius: 4px;
+			padding: 20px 24px;
+			margin-bottom: 28px;
+			transition: all .3s ease;
+			&:hover{
+				background: #018A6F;
+			}
+			&:active{
+				background: #0BCAA4;
+			}
+		}
+		#in-file1{
+			display: none;
+		}
+		.label-file{
+			background: #FFFFFF;
+			border: 1px dashed #E4E4E4;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 14px 28px;
+			width: fit-content;
+			cursor: pointer;
+			span{
+				margin-bottom: 0;
+				margin-left: 12px;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 16px;
+				color: #3E3E3E;
+			}
+		}
+		label{
+			margin-bottom: 28px;
+			display: block;
+			width: 100%;
+			span{
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: #262028;
+				display: flex;
+				margin-bottom: 8px;
+				span{
+					color: #F86A45;
+					margin-bottom: 0;
+				}
+			}
+		}
+		textarea{
+			min-height: 140px;
+			padding-top: 20px;
+		}
+		textarea,
+		input{
+			background: #FFFFFF;
+			height: 56px;
+			border: 1px solid #E4E4E4;
+			border-radius: 4px;
+			font-weight: 600;
+			font-size: 14px;
+			outline: none;
+			line-height: 16px;
+			padding-left: 24px;
+			padding-right: 24px;
+			width: 100%;
+			color: #262028;
+		}
+		.inputs{
+			display: flex;
+			align-items: center;
+			width: 100%;
+			label{
+				margin-right: 28px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+	.page-recall__form .inputs{
+		display: block
+	}
+	.page-recall__form button,
+	.page-recall__form .inputs label{
+		margin-bottom: 20px;
+	}
+}

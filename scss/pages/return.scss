@@ -1,0 +1,153 @@
+.page-return{
+
+	&__inner{
+		.inner__block{
+			margin: 0 -15px;
+			display: flex;
+		}
+		.inner__item{
+			background: #FAFAFA;
+			padding: 24px 20px;
+			border: 1px solid #E4E4E4;
+			margin: 0 15px;
+			max-width: 308px;
+			border-radius: 10px;
+			span{
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 24px;
+				color: #262028;
+				margin-left: 8px;
+			}
+			.item__top{
+				margin-bottom: 16px;
+				display: flex;
+				align-items: center;
+			}
+		}
+		b{
+			&.top{
+				color: #951BC4;
+				display: block;
+			}
+		}
+		ol{
+			list-style-type: none;
+			counter-reset: olText;
+			max-width: 870px;
+			li{
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 36px;
+				counter-increment: olText;
+				color: #3E3E3E;
+				&:before{
+					content: counter(olText)'. ';
+				}
+			}
+		}
+		ul{
+			max-width: 870px;
+			li{
+				font-size: 14px;
+				line-height: 26px;
+				font-weight: 600;
+				color: #3E3E3E;
+				margin: 7px 0;
+				&:before{
+					content: '• ';
+					font-weight: 700;
+					color: #951BC4;
+				}
+			}
+		}
+	}
+
+	h2{
+		font-size: 24px;
+		line-height: 28px;
+		margin-top: 48px;
+		max-width: 870px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	p{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #3E3E3E;
+		max-width: 870px;
+		margin: 10px 0;
+		a{
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 24px;
+			text-decoration-line: underline;
+			color: #00A887;
+			&:hover{
+				color: #018A6F;
+			}
+			&:active{
+				color: #0BCAA4;
+			}
+		}
+		.svetDekor{
+			color: #951BC4;
+			font-weight: 700;
+			span{
+				color: #00A887;
+			}
+		}
+	}
+
+	button{
+		background: #00A887;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+		padding: 20px 24px;
+		color: #FFFFFF;
+		margin-top: 28px;
+		transition: all .3s ease;
+		&:hover{
+			background: #018A6F;
+		}
+		&:active{
+			background: #0BCAA4;
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+	.page-return__inner .inner__item{
+		margin: 0;
+		max-width: 100%
+	}
+	.page-return__inner .inner__block{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		margin: 0
+	}
+}
+@media screen and (max-width: 576px) {
+	.page-return__inner .inner__block{
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 16px;
+	}
+	.page-return button{
+		padding: 16px 20px;
+	}
+}
+
+
+
+
+
+
+

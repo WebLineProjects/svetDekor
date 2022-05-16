@@ -1,0 +1,2277 @@
+doctype html
+html(lang="ru")
+	head
+		title СветДекор
+
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		meta(name="description" content="Description of website")
+		meta(name="keywords" content="Website")
+
+		<!-- Montserrat FONT -->
+		link(href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet")
+
+
+		<!-- Slick SLIDER -->
+		link(rel="stylesheet" href="css/slick/slick-theme.css")
+		link(rel="stylesheet" href="css/slick/slick.css")
+		<!-- Slick SLIDER -->
+
+		link(rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css")
+		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="css/style.css")
+
+	body
+		include mixins.pug
+		main.body-inner
+			header.header
+
+				.header-menu_mob
+					.header-menu__bgd
+					.header-menu__content
+						.header-menu__top
+							h2 Меню
+							.header-menu__close
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#909090"/><path d="M8.43492 16.2858C8.25046 16.2858 8.066 16.2158 7.92585 16.0746C7.64451 15.7933 7.64451 15.3371 7.92585 15.0558L15.0563 7.92536C15.3378 7.64402 15.7939 7.64402 16.0753 7.92536C16.3566 8.2067 16.3566 8.66283 16.0753 8.94435L8.94468 16.0746C8.8026 16.2158 8.61832 16.2858 8.43492 16.2858Z" fill="#909090"/><path d="M15.5652 16.2858C15.3809 16.2858 15.1965 16.2158 15.0563 16.0746L7.92598 8.94443C7.64446 8.66306 7.64446 8.20689 7.92598 7.92552C8.20733 7.64397 8.66346 7.64397 8.9448 7.92552L16.0751 15.0565C16.3567 15.3379 16.3567 15.7941 16.0751 16.0755C15.9341 16.2158 15.7497 16.2858 15.5652 16.2858Z" fill="#909090"/></svg>
+						.header-menu__inner
+							.inner__list
+								ul.list__ul
+									li.list__li
+										.li__top
+											a(href="#") Доставка
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__submenu
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+									li.list__li
+										a(href="#") Оплата
+									li.list__li
+										a(href="#") О компании
+									li.list__li
+										a(href="#") Блог
+									li.list__li
+										a(href="#") Бренды
+									li.list__li
+										.li__top
+											a(href="#") Помощь
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__submenu
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+											li
+												a(href="#") Оплата
+									li.list__li
+										a(href="#") Контакты
+
+
+				.header-catalog_mob
+					.header-catalog__bgd
+					.header-catalog__content
+						.header-catalog__top
+							h2 Каталог
+							.header-catalog__close
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0006 22.2858C6.32879 22.2858 1.71484 17.6718 1.71484 12.0001C1.71484 6.3283 6.32879 1.71436 12.0006 1.71436C17.6723 1.71436 22.2863 6.3283 22.2863 12.0001C22.2863 17.6718 17.6723 22.2858 12.0006 22.2858ZM12.0006 3.00007C7.03772 3.00007 3.00056 7.03723 3.00056 12.0001C3.00056 16.9629 7.03772 21.0001 12.0006 21.0001C16.9634 21.0001 21.0006 16.9629 21.0006 12.0001C21.0006 7.03723 16.9634 3.00007 12.0006 3.00007Z" fill="#909090"/><path d="M8.43492 16.2858C8.25046 16.2858 8.066 16.2158 7.92585 16.0746C7.64451 15.7933 7.64451 15.3371 7.92585 15.0558L15.0563 7.92536C15.3378 7.64402 15.7939 7.64402 16.0753 7.92536C16.3566 8.2067 16.3566 8.66283 16.0753 8.94435L8.94468 16.0746C8.8026 16.2158 8.61832 16.2858 8.43492 16.2858Z" fill="#909090"/><path d="M15.5652 16.2858C15.3809 16.2858 15.1965 16.2158 15.0563 16.0746L7.92598 8.94443C7.64446 8.66306 7.64446 8.20689 7.92598 7.92552C8.20733 7.64397 8.66346 7.64397 8.9448 7.92552L16.0751 15.0565C16.3567 15.3379 16.3567 15.7941 16.0751 16.0755C15.9341 16.2158 15.7497 16.2858 15.5652 16.2858Z" fill="#909090"/></svg>
+						.header-catalog__inner
+							.inner__list
+								ul.list__ul
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+									li.list__item
+										.item__inner
+											a(href="#")
+												img(src="img/header/fix-catalog-menu1.png" alt="Image")
+												span Люстры
+											img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_par
+										ul.list__sub-menu
+											li.list__item_sub.list__item_sub_back
+												img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												span Бра
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+											li.list__item_sub
+												.item__inner_sub
+													a(href="#")
+														span Место использования
+													img(src="img/header/arr.svg" alt="arrow").item__arr.item__arr_sub
+												ul.list__sub-menu_2
+													li
+														a(href="#") Для спальни 
+													li
+														a(href="#") Для гостиной 
+													li
+														a(href="#") Для кухни 
+													li
+														a(href="#") Для детской 
+													li
+														a(href="#") Для ванной 
+													li
+														a(href="#") Для офиса 
+													li
+														a(href="#") Для прихожей 
+													li
+														a(href="#") Для кафе и ресторанов
+
+
+
+				.header__top
+					.wrapper
+						a(href="index.html").header__logo
+							img(src="img/logo.svg" alt="Logo")
+						.header__city
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99888 1.42847C6.4542 1.42847 3.57031 4.1016 3.57031 7.38724C3.57031 11.5169 10.0052 18.5713 10.0052 18.5713C10.0052 18.5713 16.4275 11.3139 16.4275 7.38724C16.4275 4.1016 13.5437 1.42847 9.99888 1.42847ZM11.9385 9.13198C11.4037 9.62761 10.7013 9.87549 9.99888 9.87549C9.29654 9.87549 8.59397 9.62761 8.05936 9.13198C6.98982 8.14069 6.98982 6.52769 8.05936 5.53631C8.57726 5.05605 9.26617 4.79154 9.99888 4.79154C10.7316 4.79154 11.4204 5.05615 11.9385 5.53631C13.0081 6.52769 13.0081 8.14069 11.9385 9.13198Z" fill="#262028"/></svg>
+							span Ваш город:
+							button Москва
+						a(href="tel:88003433434").header__whatsapp
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0868 3.89204C14.4583 2.31775 12.3154 1.42847 10.0333 1.42847C3.48326 1.42847 -0.629598 8.52489 2.64112 14.1699L1.42969 18.5713L5.95469 17.3913C7.92612 18.4563 9.54112 18.362 10.0375 18.4249C17.6325 18.4249 21.4133 9.23632 16.0761 3.9199L16.0868 3.89204Z" fill="#ECEFF1"/><path d="M10.0471 16.9649L10.0428 16.9642H10.0314C7.7585 16.9642 6.30636 15.8878 6.1635 15.8257L3.48493 16.5221L4.20279 13.9185L4.03208 13.6507C3.32493 12.5249 2.94922 11.2285 2.94922 9.89351C2.94922 3.6128 10.6242 0.472085 15.0656 4.91137C19.4964 9.30423 16.3856 16.9649 10.0471 16.9649Z" fill="#4CAF50"/><path d="M13.9353 11.6477L13.9289 11.7013C13.7139 11.5941 12.6668 11.082 12.4718 11.0113C12.0339 10.8491 12.1575 10.9856 11.3168 11.9484C11.1918 12.0877 11.0675 12.0984 10.8553 12.002C10.6411 11.8948 9.9532 11.6698 9.13892 10.9413C8.50463 10.3734 8.07892 9.67698 7.9532 9.4627C7.74392 9.10127 8.18177 9.04984 8.58034 8.29556C8.65177 8.14556 8.61534 8.0277 8.56249 7.92127C8.50892 7.81413 8.08249 6.76413 7.90392 6.34556C7.73249 5.92841 7.55606 5.98127 7.42392 5.98127C7.01249 5.94556 6.71177 5.95127 6.44677 6.22698C5.29392 7.49413 5.58463 8.80127 6.57106 10.1913C8.50963 12.7284 9.54249 13.1956 11.4311 13.8441C11.9411 14.0063 12.4061 13.9834 12.7739 13.9306C13.1839 13.8656 14.0361 13.4156 14.2139 12.912C14.3961 12.4084 14.3961 11.9906 14.3425 11.8941C14.2896 11.7977 14.1496 11.7441 13.9353 11.6477Z" fill="#FAFAFA"/></svg>
+							span +7(495) 343-34-43
+						a(href="tel:88003433434").header__phone
+							span 8 (800) 343-34-34
+						a(href="#").header__recall
+							span Обратный звонок
+						.header__menu
+							ul
+								li.li_child
+									a(href="#") Доставка
+								li
+									a(href="#") Оплата
+								li
+									a(href="#") О компании
+								li
+									a(href="#") Блог
+								li
+									a(href="#") Бренды
+								li.li_child
+									a(href="#") Помощь
+								li
+									a(href="#") Контакты
+						.header__menu-button
+							span Меню
+							img(src="img/header/menuDots.svg" alt="Dots")
+
+				.header__sides_mob
+					.wrapper
+						.header__menu-button
+							span Меню
+							img(src="img/header/menuDots.svg" alt="Dots")
+						a(href="tel:88003433434").header__whatsapp
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0868 3.89204C14.4583 2.31775 12.3154 1.42847 10.0333 1.42847C3.48326 1.42847 -0.629598 8.52489 2.64112 14.1699L1.42969 18.5713L5.95469 17.3913C7.92612 18.4563 9.54112 18.362 10.0375 18.4249C17.6325 18.4249 21.4133 9.23632 16.0761 3.9199L16.0868 3.89204Z" fill="#ECEFF1"/><path d="M10.0471 16.9649L10.0428 16.9642H10.0314C7.7585 16.9642 6.30636 15.8878 6.1635 15.8257L3.48493 16.5221L4.20279 13.9185L4.03208 13.6507C3.32493 12.5249 2.94922 11.2285 2.94922 9.89351C2.94922 3.6128 10.6242 0.472085 15.0656 4.91137C19.4964 9.30423 16.3856 16.9649 10.0471 16.9649Z" fill="#4CAF50"/><path d="M13.9353 11.6477L13.9289 11.7013C13.7139 11.5941 12.6668 11.082 12.4718 11.0113C12.0339 10.8491 12.1575 10.9856 11.3168 11.9484C11.1918 12.0877 11.0675 12.0984 10.8553 12.002C10.6411 11.8948 9.9532 11.6698 9.13892 10.9413C8.50463 10.3734 8.07892 9.67698 7.9532 9.4627C7.74392 9.10127 8.18177 9.04984 8.58034 8.29556C8.65177 8.14556 8.61534 8.0277 8.56249 7.92127C8.50892 7.81413 8.08249 6.76413 7.90392 6.34556C7.73249 5.92841 7.55606 5.98127 7.42392 5.98127C7.01249 5.94556 6.71177 5.95127 6.44677 6.22698C5.29392 7.49413 5.58463 8.80127 6.57106 10.1913C8.50963 12.7284 9.54249 13.1956 11.4311 13.8441C11.9411 14.0063 12.4061 13.9834 12.7739 13.9306C13.1839 13.8656 14.0361 13.4156 14.2139 12.912C14.3961 12.4084 14.3961 11.9906 14.3425 11.8941C14.2896 11.7977 14.1496 11.7441 13.9353 11.6477Z" fill="#FAFAFA"/></svg>
+							span +7(495) 343-34-43
+
+				.header__center
+					.wrapper
+
+
+
+						.header__fix-catalog
+							.fix-catalog__block
+								.fix-catalog__lft
+									.lft__ovf
+										ul
+											li.li_active
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+											li
+												a(href="#")
+													img(src="img/header/fix-catalog-menu1.png" alt="Photo")
+													span Люстры
+								.fix-catalog__rht
+									.rht__ovf
+										.catalog__block.catalog__block_active
+											.rht__block
+												.rht__menu
+													h3 Виды
+													ul
+														li
+															a(href="#") Зеркала
+														li
+															a(href="#") Фоторамки
+														li
+															a(href="#") Часы
+														li
+															a(href="#") Постеры
+														li
+															a(href="#") Картины на холстах
+														li
+															a(href="#") Ключницы
+														li
+															a(href="#") Модульные картины
+														li
+															a(href="#") Декоративные панно
+											.rht__block
+												.rht__menu
+													h3 Место использования
+													ul
+														li
+															a(href="#") Для спальни
+														li
+															a(href="#") Для гостиной
+														li
+															a(href="#") Для кухни
+														li
+															a(href="#") Для детской
+														li
+															a(href="#") Для ванной
+														li
+															a(href="#") Для офиса
+														li
+															a(href="#") Для прихожей
+														li
+															a(href="#") Для кафе и ресторанов
+											.rht__block
+												.rht__menu
+													h3 Стили
+													ul
+														li
+															a(href="#") Классика
+														li
+															a(href="#") Арт-деко
+														li
+															a(href="#") Современный
+														li
+															a(href="#") Кантри
+														li
+															a(href="#") Тиффани
+														li
+															a(href="#") Хай-тек
+														li
+															a(href="#") Прованс
+														li
+															a(href="#") Восточный
+														li
+															a(href="#") Замковый
+														li
+															a(href="#") Лофт
+														li
+															a(href="#") Морской
+														li
+															a(href="#") Модерн
+														li
+															a(href="#") Ретро
+														li
+															a(href="#") Неоклассика
+														li
+															a(href="#") Скандинавский
+														li
+															a(href="#") Флористика
+														li
+															a(href="#") Японский
+														li
+															a(href="#") Эко
+											.rht__block
+												.rht__menu
+													h3 Материалы
+													ul
+														li
+															a(href="#") Хрустальные
+														li
+															a(href="#") Деревянные
+														li
+															a(href="#") Стеклянные
+														li
+															a(href="#") Пластиковые
+														li
+															a(href="#") Текстильные
+														li
+															a(href="#") Керамические
+														li
+															a(href="#") Металлические
+														li
+															a(href="#") Гипсовые
+														li
+															a(href="#") Кованые
+														li
+															a(href="#") Хрустальные
+														li
+															a(href="#") тонированные
+														li
+															a(href="#") Каменные
+														li
+															a(href="#") Бетонные
+														li
+															a(href="#") Кожаные
+														li
+															a(href="#") Силиконовые
+														li
+															a(href="#") Поликарбонат
+											.rht__image
+												img(src="img/header/image.jpg" alt="Photo")
+										.catalog__block
+											.rht__block
+												.rht__menu
+													h3 Виды
+													ul
+														li
+															a(href="#") Зеркала111
+														li
+															a(href="#") Фоторамки
+														li
+															a(href="#") Часы
+														li
+															a(href="#") Постеры
+														li
+															a(href="#") Картины на холстах
+														li
+															a(href="#") Ключницы
+														li
+															a(href="#") Модульные картины
+														li
+															a(href="#") Декоративные панно
+											.rht__block
+												.rht__menu
+													h3 Место использования
+													ul
+														li
+															a(href="#") Для спальни
+														li
+															a(href="#") Для гостиной
+														li
+															a(href="#") Для кухни
+														li
+															a(href="#") Для детской
+														li
+															a(href="#") Для ванной
+														li
+															a(href="#") Для офиса
+														li
+															a(href="#") Для прихожей
+														li
+															a(href="#") Для кафе и ресторанов
+											.rht__block
+												.rht__menu
+													h3 Стили
+													ul
+														li
+															a(href="#") Классика
+														li
+															a(href="#") Арт-деко
+														li
+															a(href="#") Современный
+														li
+															a(href="#") Кантри
+														li
+															a(href="#") Тиффани
+														li
+															a(href="#") Хай-тек
+														li
+															a(href="#") Прованс
+														li
+															a(href="#") Восточный
+														li
+															a(href="#") Замковый
+														li
+															a(href="#") Лофт
+														li
+															a(href="#") Морской
+														li
+															a(href="#") Модерн
+														li
+															a(href="#") Ретро
+														li
+															a(href="#") Неоклассика
+														li
+															a(href="#") Скандинавский
+														li
+															a(href="#") Флористика
+														li
+															a(href="#") Японский
+														li
+															a(href="#") Эко
+											.rht__block
+												.rht__menu
+													h3 Материалы
+													ul
+														li
+															a(href="#") Хрустальные
+														li
+															a(href="#") Деревянные
+														li
+															a(href="#") Стеклянные
+														li
+															a(href="#") Пластиковые
+														li
+															a(href="#") Текстильные
+														li
+															a(href="#") Керамические
+														li
+															a(href="#") Металлические
+														li
+															a(href="#") Гипсовые
+														li
+															a(href="#") Кованые
+														li
+															a(href="#") Хрустальные
+														li
+															a(href="#") тонированные
+														li
+															a(href="#") Каменные
+														li
+															a(href="#") Бетонные
+														li
+															a(href="#") Кожаные
+														li
+															a(href="#") Силиконовые
+														li
+															a(href="#") Поликарбонат
+											.rht__image
+												img(src="img/header/image.jpg" alt="Photo")
+
+
+
+
+
+
+						a(href="index.html").header__logo
+							img(src="img/logo.svg" alt="Logo")
+						button.header__catalog
+							.header__catalog-burger
+								.line
+								.line
+								.line
+							span Каталог товаров
+						.header__search
+							form(action="#")
+							input(type="text" placeholder="Поиск по сайту...")
+							button(type="submit")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.37486 17.0709C8.4142 17.0762 8.45333 17.0787 8.49142 17.0787C8.91309 17.0787 9.28118 16.7667 9.33956 16.3373C9.40339 15.8679 9.07506 15.436 8.60589 15.3726C5.65423 14.9714 3.42913 12.4159 3.42913 9.42864C3.42913 6.11998 6.12047 3.42864 9.42913 3.42864C12.7378 3.42864 15.4291 6.11998 15.4291 9.42864C15.4291 11.868 13.975 14.0435 11.7254 14.9706C11.2878 15.1509 11.0792 15.6519 11.2591 16.0895C11.4395 16.5271 11.9409 16.7353 12.3781 16.5553C13.0617 16.2739 13.6858 15.8997 14.2441 15.4556L20.8227 22.0347C20.9907 22.2023 21.2096 22.2858 21.4291 22.2858C21.6486 22.2858 21.8675 22.2023 22.0352 22.0347C22.3698 21.6998 22.3698 21.1574 22.0352 20.8226L15.4586 14.2459C16.5271 12.9095 17.1434 11.2256 17.1434 9.42864C17.1434 5.17515 13.6826 1.71436 9.42913 1.71436C5.17564 1.71436 1.71484 5.17515 1.71484 9.42864C1.71484 13.2695 4.57819 16.5549 8.37486 17.0709Z" fill="white"/></svg>
+								span Найти
+						.header__buttons
+							button.header__catalog-button_mob
+								<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 5H26V6.8H2V5Z" fill="#262028"/><path d="M2 13.1001H26V14.9001H2V13.1001Z" fill="#262028"/><path d="M2 21.2H26V23H2V21.2Z" fill="#262028"/></svg>
+								span Каталог
+							.buttons__item.header__login
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.4713 16.9351H3.17956C2.68585 16.9351 2.28516 16.5162 2.28516 16C2.28516 15.4838 2.68585 15.0649 3.17956 15.0649H20.4713C20.965 15.0649 21.3657 15.4838 21.3657 16C21.3657 16.5162 20.965 16.9351 20.4713 16.9351Z" fill="#262028"/><path d="M15.7028 21.9219C15.4737 21.9219 15.2449 21.8311 15.0706 21.6477C14.7212 21.2825 14.7212 20.6903 15.0706 20.3248L19.2088 15.9988L15.0706 11.6725C14.7212 11.3073 14.7212 10.7149 15.0706 10.3496C15.4202 9.98437 15.9866 9.98437 16.336 10.3496L21.1061 15.3368C21.4555 15.702 21.4555 16.2942 21.1061 16.6595L16.336 21.6464C16.1607 21.8311 15.9318 21.9219 15.7028 21.9219Z" fill="#262028"/><path d="M16.5959 29.7142C11.1685 29.7142 6.37707 26.3007 4.38672 21.0167C4.20548 20.538 4.43192 19.9945 4.89113 19.805C5.34903 19.618 5.87026 19.8511 6.0515 20.3337C7.76999 24.8956 11.9092 27.8441 16.5959 27.8441C22.8423 27.8441 27.925 22.5303 27.925 15.9999C27.925 9.46958 22.8423 4.15576 16.5959 4.15576C11.9092 4.15576 7.76999 7.10431 6.0515 11.6661C5.86895 12.1487 5.34903 12.3818 4.89113 12.1949C4.43192 12.0054 4.20548 11.4618 4.38672 10.9831C6.37707 5.69921 11.1685 2.28564 16.5959 2.28564C23.8286 2.28564 29.7138 8.43841 29.7138 15.9999C29.7138 23.5614 23.8286 29.7142 16.5959 29.7142Z" fill="#262028"/></svg>
+								span Войти
+							.buttons__item.header__favorite
+								.header__popup.header__popup_favorite
+									h2 Избранное
+									.buttons
+										button.select-all
+											img(src="img/header/CheckAll.svg" alt="Ico")
+											span Выбрать все
+										button.clear-all
+											img(src="img/header/Icotrashcan.svg" alt="Ico")
+											span Очистить выбранные
+									input(type="checkbox")#popIt1-1
+									label(for="popIt1-1").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+									input(type="checkbox")#popIt2-1
+									label(for="popIt2-1").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+									input(type="checkbox")#popIt3-1
+									label(for="popIt3-1").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+
+									.popup__button Добавить товары
+								button.buttons__button
+									.button__ico
+										.button__count 3
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9994 28.5713C15.6089 28.5713 15.2325 28.4256 14.9391 28.1608C13.831 27.1625 12.7627 26.2244 11.8202 25.3969L11.8154 25.3926C9.05209 22.9663 6.66587 20.871 5.00558 18.8069C3.14962 16.4995 2.28516 14.3117 2.28516 11.9216C2.28516 9.59948 3.05796 7.45716 4.46107 5.88902C5.88092 4.30234 7.82916 3.42847 9.94753 3.42847C11.5308 3.42847 12.9808 3.94421 14.2571 4.96125C14.9012 5.47462 15.485 6.10291 15.9994 6.83577C16.514 6.10291 17.0976 5.47462 17.7419 4.96125C19.0182 3.94421 20.4682 3.42847 22.0515 3.42847C24.1697 3.42847 26.1181 4.30234 27.538 5.88902C28.9411 7.45716 29.7137 9.59948 29.7137 11.9216C29.7137 14.3117 28.8494 16.4995 26.9935 18.8067C25.3332 20.871 22.9472 22.9661 20.1843 25.3921C19.2401 26.2209 18.1701 27.1606 17.0595 28.1612C16.7664 28.4256 16.3897 28.5713 15.9994 28.5713ZM9.94753 5.08393C8.28326 5.08393 6.75439 5.76828 5.64215 7.01106C4.51339 8.2726 3.89167 10.0165 3.89167 11.9216C3.89167 13.9318 4.61676 15.7295 6.24253 17.7507C7.81388 19.7043 10.1511 21.7565 12.8573 24.1328L12.8624 24.1371C13.8084 24.9678 14.8809 25.9096 15.9971 26.9152C17.12 25.9077 18.1942 24.9644 19.1421 24.1323C21.8481 21.7561 24.1852 19.7043 25.7565 17.7507C27.3821 15.7295 28.1072 13.9318 28.1072 11.9216C28.1072 10.0165 27.4854 8.2726 26.3567 7.01106C25.2447 5.76828 23.7156 5.08393 22.0515 5.08393C20.8323 5.08393 19.713 5.48324 18.7246 6.27065C17.8439 6.97268 17.2303 7.86014 16.8706 8.4811C16.6856 8.80042 16.36 8.99102 15.9994 8.99102C15.6389 8.99102 15.3132 8.80042 15.1283 8.4811C14.7687 7.86014 14.1552 6.97268 13.2742 6.27065C12.2858 5.48324 11.1665 5.08393 9.94753 5.08393Z" fill="#262028"/></svg>
+									span Избранное
+							.buttons__item.header__compare
+								.header__popup.header__popup_compare
+									h2 Сравнение товаров
+									p.att
+										img(src="img/header/Icoexclamation.svg" alt="Ico")
+										span Вам нужно добавить минимум 2 товара
+									.buttons
+										button.select-all
+											img(src="img/header/CheckAll.svg" alt="Ico")
+											span Выбрать все
+										button.clear-all
+											img(src="img/header/Icotrashcan.svg" alt="Ico")
+											span Очистить выбранные
+									input(type="checkbox")#popIt1
+									label(for="popIt1").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+									input(type="checkbox")#popIt2
+									label(for="popIt2").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+									input(type="checkbox")#popIt3
+									label(for="popIt3").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+
+									.popup__button Добавить товары
+								button.buttons__button
+									.button__ico
+										.button__count 3
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.6277 19.2246L24.8037 9.03199C24.712 8.83848 24.5521 8.68608 24.357 8.61168L18.4097 6.30785C18.49 3.84762 15.5486 2.66729 14.0974 4.6374C14.0885 4.63393 8.15179 2.33426 8.15806 2.33671C7.77765 2.18984 7.34956 2.36898 7.16645 2.756L2.37108 12.8906C2.30846 13.023 2.28162 13.1783 2.28553 13.3025C2.2994 16.5926 4.81832 19.2647 7.91286 19.2647C11.0083 19.2647 13.5278 16.591 13.5403 13.2996C13.5439 13.1717 13.5152 13.017 13.4529 12.8869L9.52648 4.68695L13.587 6.2599C13.5971 6.93023 13.8464 7.55894 14.2929 8.03411C14.5563 8.3144 14.8659 8.51612 15.1959 8.6395V24.4524H15.0533C12.7702 24.4524 10.9128 26.4292 10.9128 28.8591C10.9128 29.3314 11.2726 29.7143 11.7164 29.7143H20.2824C20.7262 29.7143 21.086 29.3314 21.086 28.8591C21.086 26.4292 19.2286 24.4524 16.9455 24.4524H16.8029V8.63956C17.1925 8.49382 17.5408 8.24501 17.8219 7.90046L22.9617 9.89145L18.5469 19.2247C18.484 19.3576 18.4576 19.5127 18.4614 19.6367C18.4753 22.926 20.9936 25.5974 24.0874 25.5974C27.1812 25.5974 29.6995 22.9258 29.7133 19.6365C29.7178 19.4958 29.6848 19.3451 29.6277 19.2246ZM7.88843 5.03309L11.4255 12.42H4.39313L7.88843 5.03309ZM7.91286 17.5542C5.97101 17.5542 4.34631 16.0816 3.97302 14.1304H11.8527C11.4794 16.0816 9.85471 17.5542 7.91286 17.5542ZM16.9456 26.1629C18.0617 26.1629 19.0115 26.9351 19.3483 28.0038H12.6506C12.9873 26.9351 13.9372 26.1629 15.0533 26.1629H16.9456ZM15.4293 6.82464C15.115 6.49007 15.115 5.94568 15.4293 5.61112C15.934 5.07397 16.8057 5.45552 16.8057 6.21788C16.8057 6.98052 15.9338 7.36155 15.4293 6.82464ZM24.0862 11.3182L27.6055 18.7541H20.5688L24.0862 11.3182ZM24.0874 23.887C22.1463 23.887 20.5222 22.4149 20.1488 20.4646H28.0258C27.6525 22.4148 26.0284 23.887 24.0874 23.887Z" fill="#262028"/></svg>
+									span Сравнение
+							.buttons__item.header__basket
+								.header__popup.header__popup_favorite
+									h2 Избранное
+									.buttons
+										button.select-all
+											img(src="img/header/CheckAll.svg" alt="Ico")
+											span Выбрать все
+										button.clear-all
+											img(src="img/header/Icotrashcan.svg" alt="Ico")
+											span Очистить выбранные
+									input(type="checkbox")#popIt1-2
+									label(for="popIt1-2").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+											.count__input
+												.input__minus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81502 7.42859C1.63534 7.43186 1.46434 7.49347 1.33865 7.60028C1.21296 7.70709 1.14258 7.8506 1.14258 8.00002C1.14258 8.14944 1.21296 8.29288 1.33865 8.39969C1.46434 8.50649 1.63534 8.56817 1.81502 8.57145H14.1844C14.3641 8.56817 14.5351 8.50649 14.6608 8.39969C14.7865 8.29288 14.8569 8.14944 14.8569 8.00002C14.8569 7.8506 14.7865 7.70709 14.6608 7.60028C14.5351 7.49347 14.3641 7.43186 14.1844 7.42859H1.81502Z" fill="#262028"/></svg>
+												.input__field
+													input(type="text" value="1")
+												.input__plus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99972 14.8571C7.82212 14.8571 7.65179 14.7866 7.52621 14.661C7.40063 14.5354 7.33008 14.3651 7.33008 14.1875V1.81247C7.33008 1.63486 7.40063 1.46454 7.52621 1.33896C7.65179 1.21337 7.82212 1.14282 7.99972 1.14282C8.17732 1.14282 8.34765 1.21337 8.47323 1.33896C8.59881 1.46454 8.66936 1.63486 8.66936 1.81247V14.1875C8.66936 14.3651 8.59881 14.5354 8.47323 14.661C8.34765 14.7866 8.17732 14.8571 7.99972 14.8571Z" fill="#262028"/><path d="M14.1872 8.66961H1.81222C1.63462 8.66961 1.46429 8.59906 1.33871 8.47347C1.21313 8.34789 1.14258 8.17757 1.14258 7.99997C1.14258 7.82237 1.21313 7.65204 1.33871 7.52646C1.46429 7.40087 1.63462 7.33032 1.81222 7.33032H14.1872C14.3648 7.33032 14.5351 7.40087 14.6607 7.52646C14.7863 7.65204 14.8569 7.82237 14.8569 7.99997C14.8569 8.17757 14.7863 8.34789 14.6607 8.47347C14.5351 8.59906 14.3648 8.66961 14.1872 8.66961Z" fill="#262028"/></svg>
+									input(type="checkbox")#popIt2-2
+									label(for="popIt2-2").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+											.count__input
+												.input__minus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81502 7.42859C1.63534 7.43186 1.46434 7.49347 1.33865 7.60028C1.21296 7.70709 1.14258 7.8506 1.14258 8.00002C1.14258 8.14944 1.21296 8.29288 1.33865 8.39969C1.46434 8.50649 1.63534 8.56817 1.81502 8.57145H14.1844C14.3641 8.56817 14.5351 8.50649 14.6608 8.39969C14.7865 8.29288 14.8569 8.14944 14.8569 8.00002C14.8569 7.8506 14.7865 7.70709 14.6608 7.60028C14.5351 7.49347 14.3641 7.43186 14.1844 7.42859H1.81502Z" fill="#262028"/></svg>
+												.input__field
+													input(type="text" value="1")
+												.input__plus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99972 14.8571C7.82212 14.8571 7.65179 14.7866 7.52621 14.661C7.40063 14.5354 7.33008 14.3651 7.33008 14.1875V1.81247C7.33008 1.63486 7.40063 1.46454 7.52621 1.33896C7.65179 1.21337 7.82212 1.14282 7.99972 1.14282C8.17732 1.14282 8.34765 1.21337 8.47323 1.33896C8.59881 1.46454 8.66936 1.63486 8.66936 1.81247V14.1875C8.66936 14.3651 8.59881 14.5354 8.47323 14.661C8.34765 14.7866 8.17732 14.8571 7.99972 14.8571Z" fill="#262028"/><path d="M14.1872 8.66961H1.81222C1.63462 8.66961 1.46429 8.59906 1.33871 8.47347C1.21313 8.34789 1.14258 8.17757 1.14258 7.99997C1.14258 7.82237 1.21313 7.65204 1.33871 7.52646C1.46429 7.40087 1.63462 7.33032 1.81222 7.33032H14.1872C14.3648 7.33032 14.5351 7.40087 14.6607 7.52646C14.7863 7.65204 14.8569 7.82237 14.8569 7.99997C14.8569 8.17757 14.7863 8.34789 14.6607 8.47347C14.5351 8.59906 14.3648 8.66961 14.1872 8.66961Z" fill="#262028"/></svg>
+									input(type="checkbox")#popIt3-2
+									label(for="popIt3-2").popup__item
+										.item__check
+										.item__photo
+											img(src="img/header/Photo1.jpg" alt="Photo")
+										.item__info
+											.item__stars
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-full.svg" alt="Photo").star
+												img(src="img/star-empty.svg" alt="Photo").star
+											.item__title Потолочная люстра Vele Luce Intenso VL1413L06
+											.item__price
+												.price__new 11 200 ₽
+												del.price__old 14 500 ₽
+												.price__sale -25%
+
+										.item__delete
+											img(src="img/header/Icotrashcangrey.svg" alt="Ico")
+											.count__input
+												.input__minus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81502 7.42859C1.63534 7.43186 1.46434 7.49347 1.33865 7.60028C1.21296 7.70709 1.14258 7.8506 1.14258 8.00002C1.14258 8.14944 1.21296 8.29288 1.33865 8.39969C1.46434 8.50649 1.63534 8.56817 1.81502 8.57145H14.1844C14.3641 8.56817 14.5351 8.50649 14.6608 8.39969C14.7865 8.29288 14.8569 8.14944 14.8569 8.00002C14.8569 7.8506 14.7865 7.70709 14.6608 7.60028C14.5351 7.49347 14.3641 7.43186 14.1844 7.42859H1.81502Z" fill="#262028"/></svg>
+												.input__field
+													input(type="text" value="1")
+												.input__plus
+													<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99972 14.8571C7.82212 14.8571 7.65179 14.7866 7.52621 14.661C7.40063 14.5354 7.33008 14.3651 7.33008 14.1875V1.81247C7.33008 1.63486 7.40063 1.46454 7.52621 1.33896C7.65179 1.21337 7.82212 1.14282 7.99972 1.14282C8.17732 1.14282 8.34765 1.21337 8.47323 1.33896C8.59881 1.46454 8.66936 1.63486 8.66936 1.81247V14.1875C8.66936 14.3651 8.59881 14.5354 8.47323 14.661C8.34765 14.7866 8.17732 14.8571 7.99972 14.8571Z" fill="#262028"/><path d="M14.1872 8.66961H1.81222C1.63462 8.66961 1.46429 8.59906 1.33871 8.47347C1.21313 8.34789 1.14258 8.17757 1.14258 7.99997C1.14258 7.82237 1.21313 7.65204 1.33871 7.52646C1.46429 7.40087 1.63462 7.33032 1.81222 7.33032H14.1872C14.3648 7.33032 14.5351 7.40087 14.6607 7.52646C14.7863 7.65204 14.8569 7.82237 14.8569 7.99997C14.8569 8.17757 14.7863 8.34789 14.6607 8.47347C14.5351 8.59906 14.3648 8.66961 14.1872 8.66961Z" fill="#262028"/></svg>
+
+									.popup__button Добавить товары
+								button.buttons__button
+									.button__ico
+										.button__count 3
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.1224 20.1906H11.1236C11.1247 20.1906 11.1257 20.1904 11.1268 20.1904H25.6959C26.0546 20.1904 26.3699 19.9422 26.4685 19.5825L29.6828 7.8492C29.7521 7.59624 29.7035 7.3243 29.5518 7.11434C29.3999 6.90438 29.1624 6.78085 28.9102 6.78085H9.26912L8.69469 4.08476C8.61287 3.70128 8.28684 3.42847 7.91017 3.42847H3.08873C2.64488 3.42847 2.28516 3.80365 2.28516 4.26656C2.28516 4.72948 2.64488 5.10466 3.08873 5.10466H7.26563C7.36734 5.58242 10.0145 18.0067 10.1669 18.7215C9.31286 19.1087 8.71374 19.9968 8.71374 21.0285C8.71374 22.4148 9.79521 23.5428 11.1245 23.5428H25.6959C26.1398 23.5428 26.4995 23.1676 26.4995 22.7047C26.4995 22.2417 26.1398 21.8666 25.6959 21.8666H11.1245C10.6814 21.8666 10.3209 21.4905 10.3209 21.0285C10.3209 20.5671 10.6802 20.1917 11.1224 20.1906ZM27.8448 8.45704L25.0897 18.5142H11.769L9.62613 8.45704H27.8448Z" fill="#262028"/><path d="M10.3203 26.057C10.3203 27.4434 11.4018 28.5713 12.731 28.5713C14.0603 28.5713 15.1418 27.4434 15.1418 26.057C15.1418 24.6707 14.0603 23.5427 12.731 23.5427C11.4018 23.5427 10.3203 24.6707 10.3203 26.057ZM12.731 25.2189C13.174 25.2189 13.5346 25.595 13.5346 26.057C13.5346 26.5191 13.174 26.8951 12.731 26.8951C12.288 26.8951 11.9275 26.5191 11.9275 26.057C11.9275 25.595 12.288 25.2189 12.731 25.2189Z" fill="#262028"/><path d="M21.6797 26.057C21.6797 27.4434 22.7612 28.5713 24.0904 28.5713C25.4196 28.5713 26.5011 27.4434 26.5011 26.057C26.5011 24.6707 25.4196 23.5427 24.0904 23.5427C22.7612 23.5427 21.6797 24.6707 21.6797 26.057ZM24.0904 25.2189C24.5334 25.2189 24.894 25.595 24.894 26.057C24.894 26.5191 24.5334 26.8951 24.0904 26.8951C23.6474 26.8951 23.2868 26.5191 23.2868 26.057C23.2868 25.595 23.6474 25.2189 24.0904 25.2189Z" fill="#262028"/></svg>
+									span Корзина
+				.header__search-mob
+					.wrapper
+						.header__search
+							form(action="#")
+							input(type="text" placeholder="Поиск по сайту...")
+							button(type="submit")
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.37486 17.0709C8.4142 17.0762 8.45333 17.0787 8.49142 17.0787C8.91309 17.0787 9.28118 16.7667 9.33956 16.3373C9.40339 15.8679 9.07506 15.436 8.60589 15.3726C5.65423 14.9714 3.42913 12.4159 3.42913 9.42864C3.42913 6.11998 6.12047 3.42864 9.42913 3.42864C12.7378 3.42864 15.4291 6.11998 15.4291 9.42864C15.4291 11.868 13.975 14.0435 11.7254 14.9706C11.2878 15.1509 11.0792 15.6519 11.2591 16.0895C11.4395 16.5271 11.9409 16.7353 12.3781 16.5553C13.0617 16.2739 13.6858 15.8997 14.2441 15.4556L20.8227 22.0347C20.9907 22.2023 21.2096 22.2858 21.4291 22.2858C21.6486 22.2858 21.8675 22.2023 22.0352 22.0347C22.3698 21.6998 22.3698 21.1574 22.0352 20.8226L15.4586 14.2459C16.5271 12.9095 17.1434 11.2256 17.1434 9.42864C17.1434 5.17515 13.6826 1.71436 9.42913 1.71436C5.17564 1.71436 1.71484 5.17515 1.71484 9.42864C1.71484 13.2695 4.57819 16.5549 8.37486 17.0709Z" fill="white"/></svg>
+								span Найти
+				.header__bottom
+					.wrapper
+						.header__slider
+							ul
+								li
+									span.li__span Люстры
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Светильники
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Бра и подсветки
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Споты
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Настольные лампы
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Торшеры
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Трековые системы
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Уличное освещение
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Офисное освещение
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Люстры
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Светильники
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Бра и подсветки
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Споты
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Настольные лампы
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Торшеры
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Трековые системы
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Уличное освещение
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+								li
+									span.li__span Офисное освещение
+									.categories__fixed
+										.categories__block
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+											a(href="#").categories__item
+												.item__photo
+													img(src="img/index/cat-photo1.jpg" alt="Photo")
+												h3.item__title Диваны
+							.header__arrows
+								button.arr__lft
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.21098 8.50605L12.7752 0.20355C13.0558 -0.0683121 13.5101 -0.0678551 13.7903 0.204956C14.0702 0.477733 14.0694 0.91961 13.7888 1.19168L5.73433 9.00003L13.7891 16.8083C14.0697 17.0805 14.0704 17.522 13.7905 17.7949C13.6501 17.9316 13.4662 18 13.2822 18C13.0987 18 12.9154 17.9321 12.7753 17.7963L4.21098 9.49397C4.07584 9.36326 4 9.18537 4 9.00003C4 8.81469 4.07605 8.63701 4.21098 8.50605Z" fill="#A4A4A4"/></svg>
+								button.arr__rht
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.789 8.50605L5.22476 0.20355C4.94417 -0.0683121 4.48987 -0.0678551 4.20974 0.204956C3.92983 0.477733 3.93056 0.91961 4.21119 1.19168L12.2657 9.00003L4.2109 16.8083C3.9303 17.0805 3.92958 17.522 4.20945 17.7949C4.34988 17.9316 4.53385 18 4.71781 18C4.90131 18 5.08456 17.9321 5.22473 17.7963L13.789 9.49397C13.9242 9.36326 14 9.18537 14 9.00003C14 8.81469 13.9239 8.63701 13.789 8.50605Z" fill="#A4A4A4"/></svg>
+		
+			block content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			

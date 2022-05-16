@@ -1,0 +1,120 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-ordered
+
+
+		.wrapper
+
+			h1.main-title-h1 Заказ оформлен
+
+			.page-ordered__block
+				.page-ordered__item
+					.item__title Номер заказа 
+						b № 356 986 701 
+						| от 
+						b 10.01.20
+					p В ближайшее время с Вами свяжется наш менеджер<br />для подтверждения заказа!
+					h3 Информация о заказе
+					ul.item__list
+						li
+							p Курьерская доставка:
+							.line
+							b Москва, ул. Сумская 134
+						li
+							p ФИО:
+							.line
+							b Путин Владимир Владимирович
+						li
+							p Телефон:
+							.line
+							b +7(495) 343-34-43
+						li
+							p E-mail:
+							.line
+							b putin@yandex.ru
+					.item__sides
+						.item__product
+							.product__photo
+								img(src="img/ordered/Photo2.jpg" alt="Photo")
+							.product__info
+								h4.product__title Потолочная люстра Vele Luce Intenso VL1413L06
+								.product__art
+									span Артикул:  
+										span SD-345TM43
+								.product__size
+									span Кол-во:  
+										span 2
+								.product__price 11 200 ₽
+						.item__finish
+							ul
+								li
+									span Оплата
+									.line
+									span Картой на сайте
+								li
+									span Доставка
+									.line
+									span Бесплатно
+								li.total
+									span Итого
+									.line
+									span 40 000 ₽
+				.page-ordered__item
+					img(src="img/ordered/Photo1.png" alt="Photo")
+				.page-ordered__item
+					p Если у вас возникли вопросы обратитесь по телефону:
+					.item__phones
+						.item__phone.item__phone_whatsapp
+							img(src="img/ordered/whatsapp.svg" alt="Ico")
+							span +7(495) 343-34-43
+						.item__phone
+							span +7(495) 343-34-43
+							small Бесплатно по России
+				.page-ordered__item
+					p Информация о заказе выслана на ваш e-mail: 
+						a(href="#") putin@yandex.ru
+
+			button.back.mb-100 Вернуться к покупкам
+
+
+			
+
+			+email
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

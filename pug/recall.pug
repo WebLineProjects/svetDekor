@@ -1,0 +1,76 @@
+extends includes/header.pug
+
+block content
+
+
+	+breadcrumbs
+
+	main.page-recall
+
+
+		.wrapper
+
+			h1.main-title-h1 Обратная связь
+
+			form(action="#").page-recall__form
+				.inputs
+					label
+						span Имя
+							span *
+						input(type="text")
+					label
+						span E-mail
+							span *
+						input(type="email")
+				label
+					span Ваш вопрос
+						span *
+					textarea
+				input(type="file")#in-file1
+				label(for="in-file1").label-file
+					<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 26C7.38293 26 2 20.6171 2 14C2 7.38293 7.38293 2 14 2C20.6171 2 26 7.38293 26 14C26 20.6171 20.6171 26 14 26ZM14 3.5C8.21002 3.5 3.5 8.21002 3.5 14C3.5 19.79 8.21002 24.5 14 24.5C19.79 24.5 24.5 19.79 24.5 14C24.5 8.21002 19.79 3.5 14 3.5Z" fill="#951BC4"/><path d="M19.25 15H8.75C8.336 15 8 14.552 8 14C8 13.448 8.336 13 8.75 13H19.25C19.664 13 20 13.448 20 14C20 14.552 19.664 15 19.25 15Z" fill="#951BC4"/><path d="M14 20C13.448 20 13 19.664 13 19.25V8.75C13 8.336 13.448 8 14 8C14.552 8 15 8.336 15 8.75V19.25C15 19.664 14.552 20 14 20Z" fill="#951BC4"/></svg>
+					span Прикрепить файл
+				button(type="submit") Отправить
+				input(type="checkbox")#id-ch1
+				label(for="id-ch1").label-checkbox Я ознакомился и принимаю 
+					a(href="#") Политику конфиденциальности 
+					| и 
+					a(href="#") Условия продажи.
+
+
+
+
+			+email
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

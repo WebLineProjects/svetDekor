@@ -1,0 +1,102 @@
+.page-faq{
+
+	.pt-48{
+		padding-top: 20px;
+	}
+
+	&__item{
+		background: #FFFFFF;
+		border: 1px solid #F4F2EE;
+		border-radius: 10px;
+		margin-bottom: 28px;
+		transition: all .3s ease;
+		&.akkordion_open{
+			border: 1px solid #00A887;
+			.item__head{
+				img{
+					transform: scaleY(-1);
+				}
+			}
+		}
+		.item__head{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 28px;
+			img{
+				transition: all .3s ease;
+			}
+			span{
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 28px;
+				color: #262028;
+			}
+		}
+		.item__body{
+			padding: 0 28px 0px;
+		}
+	}
+
+	&__sides{
+		display: flex;
+		align-items: flex-start;
+	}
+	.navigation{
+		max-width: 308px;
+		min-width: 308px;
+		position: sticky;
+		top: 100px;
+	}
+
+	p{
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #3E3E3E;
+		margin-bottom: 28px;
+	}
+	h2{
+		font-size: 24px;
+		line-height: 28px;
+		border: none;
+		display: flex;
+		align-items: center;
+		margin-bottom: 28px;
+		span{
+			padding-left: 16px;
+		}
+	}
+
+	.akk{
+		p{
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+	.page-faq__sides{
+		display: block;
+	}
+	.page-faq .navigation{
+		max-width: 100%;
+		min-width: 0;
+		top: 80px;
+	}
+}
+@media screen and (max-width: 700px) {
+
+	.page-faq .navigation{
+		top: 63px;
+	}
+}
+
+
+
+
+
+
+
+

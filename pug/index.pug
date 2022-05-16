@@ -1,0 +1,1732 @@
+extends includes/header.pug
+
+block content
+
+	main.page-index
+
+		.wrapper
+
+			section.page-index__banner.mb-100
+				.block
+				.block
+				.block
+
+			section.page-index__categories.mb-100
+
+				h2 Популярные категории
+
+				.categories__block
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo2.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo2.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+					a(href="#").categories__item
+						.item__photo
+							img(src="img/index/cat-photo1.jpg" alt="Photo")
+						h3.item__title Диваны
+				a(href="#").show-more-link
+					span Показать все категории
+					<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+
+			section.page-index__products.mb-100
+
+				.switch__buttons
+					ul
+						li.li_active
+							span Распродажа
+						li
+							span Новинки
+						li
+							span Популярное
+
+				.switch__block
+					.switch__item.switch__item_active
+						.card__block.block-more-view(data-more-view="4")
+							.card.item-more-view.card-stock-red.card-sale
+								.card__buttons
+									.button__item
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0011 17.8571C9.75706 17.8571 9.52177 17.766 9.3384 17.6005C8.64587 16.9766 7.97819 16.3903 7.38912 15.8731L7.38611 15.8704C5.65903 14.354 4.16764 13.0444 3.12995 11.7544C1.96998 10.3122 1.42969 8.94482 1.42969 7.45104C1.42969 5.9997 1.91269 4.66076 2.78964 3.68067C3.67705 2.68899 4.8947 2.14282 6.21868 2.14282C7.20823 2.14282 8.11448 2.46516 8.91216 3.10081C9.31473 3.42167 9.67964 3.81435 10.0011 4.27239C10.3227 3.81435 10.6875 3.42167 11.0902 3.10081C11.8879 2.46516 12.7941 2.14282 13.7837 2.14282C15.1075 2.14282 16.3253 2.68899 17.2127 3.68067C18.0897 4.66076 18.5725 5.9997 18.5725 7.45104C18.5725 8.94482 18.0324 10.3122 16.8724 11.7542C15.8347 13.0444 14.3435 14.3538 12.6166 15.8701C12.0265 16.3881 11.3578 16.9754 10.6637 17.6008C10.4805 17.766 10.245 17.8571 10.0011 17.8571ZM6.21868 3.17749C5.17851 3.17749 4.22296 3.60521 3.52781 4.38195C2.82234 5.17041 2.43376 6.26032 2.43376 7.45104C2.43376 8.70738 2.88695 9.83098 3.90305 11.0942C4.88515 12.3152 6.34594 13.5978 8.03731 15.083L8.04045 15.0857C8.63175 15.6049 9.30205 16.1935 9.99968 16.822C10.7015 16.1923 11.3728 15.6028 11.9653 15.0827C13.6566 13.5976 15.1172 12.3152 16.0993 11.0942C17.1153 9.83098 17.5685 8.70738 17.5685 7.45104C17.5685 6.26032 17.1799 5.17041 16.4744 4.38195C15.7794 3.60521 14.8237 3.17749 13.7837 3.17749C13.0217 3.17749 12.3221 3.42706 11.7044 3.91919C11.1539 4.35796 10.7704 4.91262 10.5456 5.30072C10.43 5.50029 10.2265 5.61942 10.0011 5.61942C9.77577 5.61942 9.57226 5.50029 9.45664 5.30072C9.23194 4.91262 8.84847 4.35796 8.29784 3.91919C7.68012 3.42706 6.98053 3.17749 6.21868 3.17749Z" fill="#A4A4A4"/></svg>
+									.button__item
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.5188 12.0154L15.5037 5.64506C15.4465 5.52411 15.3465 5.42886 15.2246 5.38236L11.5075 3.94247C11.5577 2.40483 9.71933 1.66712 8.81237 2.89844C8.80678 2.89626 5.09633 1.45897 5.10025 1.4605C4.8625 1.36871 4.59494 1.48067 4.4805 1.72256L1.48339 8.05667C1.44425 8.13945 1.42748 8.23652 1.42992 8.3141C1.43859 10.3704 3.01292 12.0405 4.947 12.0405C6.88166 12.0405 8.45635 10.3694 8.46412 8.31228C8.4664 8.23239 8.44845 8.13568 8.40955 8.05436L5.95552 2.9294L8.49335 3.9125C8.49965 4.33145 8.65547 4.7244 8.93454 5.02138C9.09914 5.19656 9.29267 5.32263 9.49888 5.39975V15.2828H9.40975C7.98285 15.2828 6.82196 16.5183 6.82196 18.037C6.82196 18.3322 7.04683 18.5715 7.32419 18.5715H12.678C12.9553 18.5715 13.1802 18.3322 13.1802 18.037C13.1802 16.5183 12.0193 15.2828 10.5924 15.2828H10.5033V5.39978C10.7468 5.3087 10.9645 5.15319 11.1402 4.93785L14.3525 6.18222L11.5933 12.0155C11.554 12.0985 11.5374 12.1955 11.5398 12.273C11.5486 14.3288 13.1225 15.9984 15.0561 15.9984C16.9897 15.9984 18.5636 14.3287 18.5723 12.2729C18.5751 12.1849 18.5545 12.0907 18.5188 12.0154ZM4.93174 3.14574L7.14242 7.76255H2.74717L4.93174 3.14574ZM4.947 10.9715C3.73335 10.9715 2.71791 10.051 2.4846 8.83159H7.40941C7.1761 10.051 6.16066 10.9715 4.947 10.9715ZM10.5924 16.3519C11.29 16.3519 11.8837 16.8345 12.0941 17.5024H7.90809C8.11855 16.8345 8.71222 16.3519 9.40979 16.3519H10.5924ZM9.6448 4.26546C9.44833 4.05635 9.44833 3.71611 9.6448 3.50701C9.96023 3.17129 10.505 3.40976 10.505 3.88623C10.505 4.36288 9.9601 4.60103 9.6448 4.26546ZM15.0554 7.07394L17.2549 11.7214H12.857L15.0554 7.07394ZM15.0561 14.9294C13.8429 14.9294 12.8278 14.0094 12.5945 12.7904H17.5176C17.2843 14.0093 16.2692 14.9294 15.0561 14.9294Z" fill="#A4A4A4"/></svg>
+									.button__item
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.21546 15.0007C4.47395 15.0007 1.42969 11.9565 1.42969 8.2151C1.42969 4.47359 4.47395 1.42932 8.21546 1.42932C11.9568 1.42932 15.0011 4.47359 15.0011 8.2151C15.0011 11.9565 11.9568 15.0007 8.21546 15.0007ZM8.21546 2.50075C5.06473 2.50075 2.50112 5.06437 2.50112 8.2151C2.50112 11.3658 5.06473 13.9293 8.21546 13.9293C11.3662 13.9293 13.9297 11.3658 13.9297 8.2151C13.9297 5.06437 11.3662 2.50075 8.21546 2.50075Z" fill="#A4A4A4"/><path d="M18.0371 18.5722C17.8999 18.5722 17.7628 18.52 17.6584 18.4152L12.2585 13.0151C12.0492 12.8058 12.0492 12.4666 12.2585 12.2572C12.4678 12.0479 12.807 12.0479 13.0163 12.2572L18.4164 17.6572C18.6256 17.8665 18.6256 18.2058 18.4164 18.4152C18.3113 18.52 18.1743 18.5722 18.0371 18.5722Z" fill="#A4A4A4"/><path d="M10.8929 8.75076H5.53571C5.24 8.75076 5 8.51076 5 8.21504C5 7.91932 5.24 7.67932 5.53571 7.67932H10.8929C11.1886 7.67932 11.4286 7.91932 11.4286 8.21504C11.4286 8.51076 11.1886 8.75076 10.8929 8.75076Z" fill="#A4A4A4"/><path d="M8.21541 11.4292C7.91969 11.4292 7.67969 11.1892 7.67969 10.8935V5.53633C7.67969 5.24061 7.91969 5.00061 8.21541 5.00061C8.51112 5.00061 8.75112 5.24061 8.75112 5.53633V10.8935C8.75112 11.1892 8.51112 11.4292 8.21541 11.4292Z" fill="#A4A4A4"/></svg>
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+								.card__bottom
+									a(href="#") Купить <br />в один клик
+									button В корзину
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+						button.show-more
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5582 19.2834C8.99476 19.2831 7.47028 18.8112 6.19666 17.9334C4.92303 17.0555 3.96354 15.8154 3.45154 14.3852C2.93955 12.955 2.90049 11.406 3.33981 9.95336C3.77912 8.50073 4.67498 7.21669 5.90285 6.27974C7.13072 5.34278 8.6296 4.79945 10.1911 4.72528C11.7527 4.65111 13.2993 5.04978 14.616 5.86587C15.9327 6.68197 16.9541 7.87494 17.5382 9.27896C18.1222 10.683 18.24 12.2283 17.8751 13.7001L15.4538 11.356L14.5159 12.264L18.4006 16.0249L22.2852 12.2705L21.3473 11.356L19.3118 13.3395C19.5947 11.6088 19.3228 9.83576 18.533 8.25922C17.7431 6.68268 16.4731 5.37838 14.8942 4.52201C13.3152 3.66564 11.503 3.29835 9.70184 3.46961C7.90064 3.64087 6.19693 4.34245 4.82019 5.47986C3.44346 6.61726 2.45985 8.13584 2.00188 9.83102C1.54389 11.5262 1.63354 13.3166 2.25874 14.9609C2.88394 16.6053 4.01466 18.0246 5.49857 19.0277C6.98249 20.0309 8.74831 20.5696 10.5582 20.5714L10.5582 19.2834Z" fill="#00A887"/></svg>
+							span Показать еще
+					.switch__item
+						.card__block.block-more-view(data-more-view="4")
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							
+						button.show-more
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5582 19.2834C8.99476 19.2831 7.47028 18.8112 6.19666 17.9334C4.92303 17.0555 3.96354 15.8154 3.45154 14.3852C2.93955 12.955 2.90049 11.406 3.33981 9.95336C3.77912 8.50073 4.67498 7.21669 5.90285 6.27974C7.13072 5.34278 8.6296 4.79945 10.1911 4.72528C11.7527 4.65111 13.2993 5.04978 14.616 5.86587C15.9327 6.68197 16.9541 7.87494 17.5382 9.27896C18.1222 10.683 18.24 12.2283 17.8751 13.7001L15.4538 11.356L14.5159 12.264L18.4006 16.0249L22.2852 12.2705L21.3473 11.356L19.3118 13.3395C19.5947 11.6088 19.3228 9.83576 18.533 8.25922C17.7431 6.68268 16.4731 5.37838 14.8942 4.52201C13.3152 3.66564 11.503 3.29835 9.70184 3.46961C7.90064 3.64087 6.19693 4.34245 4.82019 5.47986C3.44346 6.61726 2.45985 8.13584 2.00188 9.83102C1.54389 11.5262 1.63354 13.3166 2.25874 14.9609C2.88394 16.6053 4.01466 18.0246 5.49857 19.0277C6.98249 20.0309 8.74831 20.5696 10.5582 20.5714L10.5582 19.2834Z" fill="#00A887"/></svg>
+							span Показать еще
+					.switch__item
+						.card__block.block-more-view(data-more-view="4")
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-green.card-sale.card-have-video
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-green.svg" alt="Battery green")
+									span В наличии 54 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-yellow.card-no-reviews
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-yellow.svg" alt="Battery yellow")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-stock-red.card-sale
+								.card__absolute
+									.card__new NEW
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 14 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-red.svg" alt="Battery red")
+									span В наличии 2 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+							.card.item-more-view.card-empty
+								.card__absolute
+								a(href="#").card__photo
+									img(src="img/card/Photo1.jpg" alt="Photo")
+								a(href="#").card__review
+									.stars
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-full.svg" alt="star full")
+										.star
+											img(src="img/card/star-empty.svg" alt="star empty")
+									span 5 отзывов
+								a(href="#").card__title
+									h3 Люстра BLITZ 91319
+								.card__stock
+									img(src="img/card/battery-empty.svg" alt="Battery empty")
+									span В наличии 14 шт.
+								.card__info
+									.card__lft
+										.card__articul
+											span Артикул:  
+												span SD-345TM43
+										.card__brand
+											span Бренд:  
+												span BLITZ (Германия)
+									a(href="#").card__video
+										<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.44659 5.5515L1.06563 0.922904C0.903252 0.833418 0.705252 0.835475 0.544966 0.927019C0.383632 1.01959 0.285156 1.18828 0.285156 1.37136V10.6285C0.285156 10.8116 0.383632 10.9803 0.544966 11.0729C0.62668 11.1192 0.717823 11.1428 0.808966 11.1428C0.896966 11.1428 0.986013 11.1212 1.06563 11.077L9.44659 6.44841C9.61106 6.35687 9.71373 6.18613 9.71373 5.99996C9.71373 5.81378 9.61106 5.64304 9.44659 5.5515Z" fill="#909090"/></svg>
+										span Видео
+								.card__size
+									span Размеры:
+									.size__item
+										span Высота
+										b 45мм
+									.size__item
+										span Длина
+										b 235мм
+									.size__item
+										span Диаметр
+										b 35мм
+								.card__price
+									.price__main 11 200 ₽
+									del.price__old 14 500 ₽
+									.price__sale  -25%
+						button.show-more
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5582 19.2834C8.99476 19.2831 7.47028 18.8112 6.19666 17.9334C4.92303 17.0555 3.96354 15.8154 3.45154 14.3852C2.93955 12.955 2.90049 11.406 3.33981 9.95336C3.77912 8.50073 4.67498 7.21669 5.90285 6.27974C7.13072 5.34278 8.6296 4.79945 10.1911 4.72528C11.7527 4.65111 13.2993 5.04978 14.616 5.86587C15.9327 6.68197 16.9541 7.87494 17.5382 9.27896C18.1222 10.683 18.24 12.2283 17.8751 13.7001L15.4538 11.356L14.5159 12.264L18.4006 16.0249L22.2852 12.2705L21.3473 11.356L19.3118 13.3395C19.5947 11.6088 19.3228 9.83576 18.533 8.25922C17.7431 6.68268 16.4731 5.37838 14.8942 4.52201C13.3152 3.66564 11.503 3.29835 9.70184 3.46961C7.90064 3.64087 6.19693 4.34245 4.82019 5.47986C3.44346 6.61726 2.45985 8.13584 2.00188 9.83102C1.54389 11.5262 1.63354 13.3166 2.25874 14.9609C2.88394 16.6053 4.01466 18.0246 5.49857 19.0277C6.98249 20.0309 8.74831 20.5696 10.5582 20.5714L10.5582 19.2834Z" fill="#00A887"/></svg>
+							span Показать еще
+
+			section.page-index__brands.mb-100
+
+				h2 Популярные бренды
+
+				.brands__slider
+					.slider__arrows
+						.arr__lft
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11.2752L8.35321 12L3 6L8.35321 -2.82721e-08L9 0.724754L4.29382 5.99949L9 11.2752Z" fill="#3E3E3E"/></svg>
+						.arr__rht
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 0.724753L3.64679 2.82721e-08L9 6L3.64679 12L3 11.2752L7.70618 6.00051L3 0.724753Z" fill="#3E3E3E"/></svg>
+					.slider__block
+						.slider__item
+							img(src="img/index/brand1.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand2.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand3.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand2.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand3.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand2.svg" alt="Brand")
+						.slider__item
+							img(src="img/index/brand1.svg" alt="Brand")
+
+			section.page-index__blog.mb-100
+
+				.section__title
+					h2 Блог
+					a(href="#").show-more-link
+						span Показать все категории
+						<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+
+				.blog__block
+					a(href="#").blog__item
+						.item__photo
+							img(src="img/index/blog1.jpg" alt="Photo")
+						.item__tags
+							.tag.tag_orange Освещение
+							.tag.tag_purpul Офис
+							.tag.tag_green Мебель
+						.item__center
+							.item__persone
+								img(src="img/index/persone1.jpg" alt="Photo")
+								span Наталья Коваленко
+							.item__time
+								img(src="img/index/clock.svg" alt="Photo")
+								span читать 4 минуты
+						h3.item__title Как выбрать освещение для офиса?
+						p.item__text.
+							Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.
+						.item__bottom
+							.show-more-link
+								span Подробнее
+								<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span 24.12.2021
+					a(href="#").blog__item
+						.item__photo
+							img(src="img/index/blog1.jpg" alt="Photo")
+						.item__tags
+							.tag.tag_orange Освещение
+							.tag.tag_purpul Офис
+							.tag.tag_green Мебель
+						.item__center
+							.item__persone
+								img(src="img/index/persone1.jpg" alt="Photo")
+								span Наталья Коваленко
+							.item__time
+								img(src="img/index/clock.svg" alt="Photo")
+								span читать 4 минуты
+						h3.item__title Как выбрать освещение для офиса?
+						p.item__text.
+							Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.
+						.item__bottom
+							.show-more-link
+								span Подробнее
+								<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span 24.12.2021
+					a(href="#").blog__item
+						.item__photo
+							img(src="img/index/blog1.jpg" alt="Photo")
+						.item__tags
+							.tag.tag_orange Освещение
+							.tag.tag_purpul Офис
+							.tag.tag_green Мебель
+						.item__center
+							.item__persone
+								img(src="img/index/persone1.jpg" alt="Photo")
+								span Наталья Коваленко
+							.item__time
+								img(src="img/index/clock.svg" alt="Photo")
+								span читать 4 минуты
+						h3.item__title Как выбрать освещение для офиса?
+						p.item__text.
+							Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации.
+						.item__bottom
+							.show-more-link
+								span Подробнее
+								<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+							.item__date
+								img(src="img/index/calendar.svg" alt="Ico")
+								span 24.12.2021
+
+			section.page-index__information.mb-100
+
+				.sides
+
+					.sides__lft
+
+						
+						h2 Гипермаркет товаров для дома  
+							span.svetDekor Свет
+								span Декор
+
+						.lft__photo
+							img(src="img/index/infoPhoto1.jpg" alt="Photo")
+						p Гипермаркет товаров для дома СветДекор Не следует, однако забывать, что сложившаяся структура организации требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же реализация намеченных плановых заданий способствует подготовки и реализации направлений прогрессивного развития. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании систем массового участия. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности требуют определения и уточнения форм развития. Не следует, однако забывать, что консультация с широким активом играет важную роль в формировании соответствующий условий активизации. Товарищи! новая модель организационной деятельности требуют от нас анализа систем массового участия. Подробнее
+
+						a(href="#").show-more-link
+							span Подробнее
+							<svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.3536 4.35356C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464468C16.9763 0.269205 16.6597 0.269205 16.4645 0.464468C16.2692 0.65973 16.2692 0.976312 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53554C16.6597 7.7308 16.9763 7.7308 17.1716 7.53554L20.3536 4.35356ZM-4.37114e-08 4.5L20 4.5L20 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#00A887"/></svg>
+
+					.sides__rht
+						img(src="img/index/infoPhoto1.jpg" alt="Photo")
+
+			+email
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
